@@ -1,15 +1,20 @@
 import React from "react"
+import selfPortrait from "../images/Self-portrait.png"
 import { Flex, Box, Spacer, Center, Heading, Text, Image, ButtonGroup, Button } from "@chakra-ui/react"
 
 function Contacts() {
     return (
-        <Box textAlign="center">
-            <Heading>Contacts</Heading>
+        <Box id="contact-section" textAlign="center">
+            <Flex justifyContent="flex-start" alignItems="center">
+                
+                <Heading mr={5}>Contact</Heading>
+                <Box height="0.1vh" width="30%" bg="gray.400" />
+            </Flex>
             <Center bg='blue.500'>
-                <Image  src='https://bit.ly/dan-abramov' 
+                <Image  src={selfPortrait} 
                         alt="home-photo"
                         borderRadius="full"
-                        boxSize="150px" 
+                        boxSize="100px" 
                 />
             </Center>
             <Text>Welcome to checkout my social account:</Text>

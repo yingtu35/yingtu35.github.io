@@ -3,8 +3,13 @@ import { Flex, Spacer, Center, Heading, Text, Image, Box  } from "@chakra-ui/rea
 
 function About() {
     return (
-        <Box>
-            <Heading>About</Heading>
+        <Box id="about-section">
+            <Flex justifyContent="flex-start" alignItems="center">
+                
+                <Heading mr={5}>About</Heading>
+                <Box height="0.1vh" width="30%" bg="gray.400" />
+            </Flex>
+            
             <Flex justify="space-around">
                 <Center bg='blue.500'>
                     <Image  src='https://bit.ly/dan-abramov' 
