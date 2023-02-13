@@ -1,5 +1,6 @@
 import React from "react"
-import todoListImage from "../images/todo-list.png"
+import TodoList from "../projects/TodoList"
+
 import justPostItImage from "../images/just-post-it.PNG"
 import musicControllerImage from "../images/music-controller.PNG"
 import spaceInvaderImage from "../images/space-invaders.PNG"
@@ -15,9 +16,9 @@ function Projects() {
                 <Heading ml={5}>Projects</Heading>
             </Flex>
             <Flex justify="center" alignItems="center" direction="row" wrap="wrap">
-                <Box w="30%" bg="green.500" m={3}>
+                <Box w="30%" m={3}>
                     <Center>
-                        <Image src={todoListImage}  />
+                        <TodoList />
                     </Center>
                 </Box>
                 <Box w="30%" bg="blue.500" m={3}>

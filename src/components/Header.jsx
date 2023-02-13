@@ -48,6 +48,7 @@ function Header() {
                     Contact
                 </Button>
                 <Button variant="solid"
+                        colorScheme="green"
                         as="a"
                         href="https://drive.google.com/file/d/1QW_MzyBlSy3x5TZGu4lxouB-0IRuLjIl/view?usp=sharing"
                         target="_blank"
