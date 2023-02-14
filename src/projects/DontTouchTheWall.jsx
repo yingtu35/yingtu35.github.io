@@ -1,10 +1,10 @@
 import React, { useState } from "react"
-import todoListMain from "../images/todo-list/todo-list-main.png"
-import todoListSignup from "../images/todo-list/todo-list-signup.png"
+import dontTouchTheWallInfo from "../images/dont-touch-the-wall/game_info.PNG"
+import dontTouchTheWallPass from "../images/dont-touch-the-wall/game_pass.PNG"
 import { FaGithub, FaSearchPlus } from "react-icons/fa"
 import { Box, Flex, Image, Text, Button, Modal, ModalOverlay, ModalContent, ModalCloseButton, ModalFooter, ModalBody, ModalHeader, useDisclosure, Heading, useColorMode } from "@chakra-ui/react"
 
-function TodoList({src, title, type, link}) {
+function DontTouchTheWall({src, title, type, link}) {
     const {isOpen, onOpen, onClose} = useDisclosure();
     const [isHovered, setIsHovered] = useState(false);
 
@@ -76,23 +76,24 @@ function TodoList({src, title, type, link}) {
                 </ModalHeader>
                 <ModalCloseButton />
                 <Flex justifyContent="center" m={3}>
-                        <Image src={todoListSignup} boxSize="45%" m={2} />
-                        <Image src={todoListMain} boxSize="45%" m={2} />
+                        <Image src={dontTouchTheWallInfo} boxSize="45%" m={2} />
+                        <Image src={dontTouchTheWallPass} boxSize="45%" m={2} />
                 </Flex>
                 <ModalBody textAlign="justify" m={3} >
                     
-                    <Text>  Todo List is a web application that uses basic CRUD operations for accessing and storing users’ to-do lists. 
-                            This app is built on the React.js framework as the frontend and FastAPI as the backend. 
-                            The app features a user account system that each user can create and modify their own to-do lists. 
-                            OAuth 2.0 is applied so that the risks of securities are minimized.
+                    <Text>  Don’t Touch The Wall is a game built to challenge your abilities of judgment, speed, and experience! 
+                            You have to move the ball from the starting line to the end without touching any of the walls in the game. 
+                            Also, be careful of the timer! The game has a total of 3 levels and the difficulty gets crazy level after level. 
+                            Can you pass all of them?
                     </Text>
                     <br />
-                    <Text>  I built this app as my side project to practice my full-stack web development skills. 
-                            Through the process, I better understand how frontend and backend are separated and how they are easily connected. 
-                            I also learned a bit of database design, as well as JWT authentication mechanism during the creation of the user account system. 
+                    <Text>  I felt accomplished to have completed this game project from the online course 
+                            called “Build a Modern Computer from First Principles: From Nand to Tetris” created by Shimon Schocken and Noam Nisan. 
+                            From the very basics of Gate Logic, I built on the knowledge to learn more complex components, such as ALU, RAM, and finally the CPU. 
+                            In addition, the course also taught me the process of transforming high-level language into low-level machine code, 
+                            by letting us build tools such as compilers, virtual machines, and assemblers by ourselves! It was a long journey and I enjoyed it a lot. 
+                            If you want to be able to build a game like me and also learn what the computer does behind the screen, I highly recommend this course.
                     </Text>
-                    <br />
-                    <Text>Hope you like the project! View my GitHub page to learn more.</Text>
                 </ModalBody>
 
                 <ModalFooter bg={modalBg[colorMode]} mt={3}>
@@ -112,4 +113,4 @@ function TodoList({src, title, type, link}) {
     )
 };
 
-export default TodoList;
+export default DontTouchTheWall;

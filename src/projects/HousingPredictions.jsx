@@ -1,10 +1,12 @@
 import React, { useState } from "react"
-import todoListMain from "../images/todo-list/todo-list-main.png"
-import todoListSignup from "../images/todo-list/todo-list-signup.png"
+// import dontTouchTheWallInfo from "../images/dont-touch-the-wall/game_info.PNG"
+// import dontTouchTheWallPass from "../images/dont-touch-the-wall/game_pass.PNG"
 import { FaGithub, FaSearchPlus } from "react-icons/fa"
+import { MdCheckCircle } from "react-icons/md"
 import { Box, Flex, Image, Text, Button, Modal, ModalOverlay, ModalContent, ModalCloseButton, ModalFooter, ModalBody, ModalHeader, useDisclosure, Heading, useColorMode } from "@chakra-ui/react"
+import { UnorderedList, ListItem, ListIcon } from "@chakra-ui/react";
 
-function TodoList({src, title, type, link}) {
+function HousingPredictions({src, title, type, link}) {
     const {isOpen, onOpen, onClose} = useDisclosure();
     const [isHovered, setIsHovered] = useState(false);
 
@@ -76,23 +78,35 @@ function TodoList({src, title, type, link}) {
                 </ModalHeader>
                 <ModalCloseButton />
                 <Flex justifyContent="center" m={3}>
-                        <Image src={todoListSignup} boxSize="45%" m={2} />
-                        <Image src={todoListMain} boxSize="45%" m={2} />
+                        <Image src={src} boxSize="45%" m={2} />
+                        <Image src={src} boxSize="45%" m={2} />
                 </Flex>
                 <ModalBody textAlign="justify" m={3} >
                     
-                    <Text>  Todo List is a web application that uses basic CRUD operations for accessing and storing users’ to-do lists. 
-                            This app is built on the React.js framework as the frontend and FastAPI as the backend. 
-                            The app features a user account system that each user can create and modify their own to-do lists. 
-                            OAuth 2.0 is applied so that the risks of securities are minimized.
+                    <Text>  This is a self-motivated project to predict the house prices from 1,500 houses with each having 72 features. 
+                            In the project, I significantly enhanced my skills in:
                     </Text>
+                    <UnorderedList>
+                        <ListItem>
+                            <ListIcon as={MdCheckCircle} color="green.500" />
+                            Data analysis
+                        </ListItem>
+                        <ListItem>
+                            <ListIcon as={MdCheckCircle} color="green.500" />
+                            Data preprocessing
+                        </ListItem>
+                        <ListItem>
+                            <ListIcon as={MdCheckCircle} color="green.500" />
+                            Machine learning model building
+                        </ListItem>
+                        <ListItem>
+                            <ListIcon as={MdCheckCircle} color="green.500" />
+                            Model hyperparameters tuning
+                        </ListItem>
+                    </UnorderedList>
                     <br />
-                    <Text>  I built this app as my side project to practice my full-stack web development skills. 
-                            Through the process, I better understand how frontend and backend are separated and how they are easily connected. 
-                            I also learned a bit of database design, as well as JWT authentication mechanism during the creation of the user account system. 
+                    <Text>  I also get a good amount of practice in multiple Python third-party libraries such as Numpy, Pandas, Matplotlib.
                     </Text>
-                    <br />
-                    <Text>Hope you like the project! View my GitHub page to learn more.</Text>
                 </ModalBody>
 
                 <ModalFooter bg={modalBg[colorMode]} mt={3}>
@@ -112,4 +126,4 @@ function TodoList({src, title, type, link}) {
     )
 };
 
-export default TodoList;
+export default HousingPredictions;

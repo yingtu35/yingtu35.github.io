@@ -1,10 +1,10 @@
 import React, { useState } from "react"
-import todoListMain from "../images/todo-list/todo-list-main.png"
-import todoListSignup from "../images/todo-list/todo-list-signup.png"
+import justPostItInput from "../images/just-post-it/just-post-it-input.PNG"
+// import todoListSignup from "../images/todo-list/todo-list-signup.png"
 import { FaGithub, FaSearchPlus } from "react-icons/fa"
 import { Box, Flex, Image, Text, Button, Modal, ModalOverlay, ModalContent, ModalCloseButton, ModalFooter, ModalBody, ModalHeader, useDisclosure, Heading, useColorMode } from "@chakra-ui/react"
 
-function TodoList({src, title, type, link}) {
+function JustPostIt({src, title, type, link}) {
     const {isOpen, onOpen, onClose} = useDisclosure();
     const [isHovered, setIsHovered] = useState(false);
 
@@ -76,23 +76,22 @@ function TodoList({src, title, type, link}) {
                 </ModalHeader>
                 <ModalCloseButton />
                 <Flex justifyContent="center" m={3}>
-                        <Image src={todoListSignup} boxSize="45%" m={2} />
-                        <Image src={todoListMain} boxSize="45%" m={2} />
+                        <Image src={justPostItInput} boxSize="45%" m={2} />
+                        {/* <Image src={JustPostItMain} boxSize="45%" m={2} /> */}
                 </Flex>
                 <ModalBody textAlign="justify" m={3} >
                     
-                    <Text>  Todo List is a web application that uses basic CRUD operations for accessing and storing users’ to-do lists. 
-                            This app is built on the React.js framework as the frontend and FastAPI as the backend. 
-                            The app features a user account system that each user can create and modify their own to-do lists. 
-                            OAuth 2.0 is applied so that the risks of securities are minimized.
+                    <Text>  Just Post It is a web application that helps you remember tasks, schedules, homework assignments, meeting appointments, etc 
+                            by putting yellowish cards on your browser. It is built on the React.js framework as the frontend and Django as the backend. 
+                            The app uses Django to provide a REST API for the frontend application, and it uses lightweight SQLite3 databases to store user data.
                     </Text>
                     <br />
-                    <Text>  I built this app as my side project to practice my full-stack web development skills. 
-                            Through the process, I better understand how frontend and backend are separated and how they are easily connected. 
-                            I also learned a bit of database design, as well as JWT authentication mechanism during the creation of the user account system. 
+                    <Text>  This is the first app that I created all by myself as a side project to practice my full-stack web development skills, 
+                            as well as hone my programming skills in both JavaScript and Python. 
+                            The design of the page is far from perfect but at least it is working!
                     </Text>
                     <br />
-                    <Text>Hope you like the project! View my GitHub page to learn more.</Text>
+                    <Text>Hope you enjoy the project!</Text>
                 </ModalBody>
 
                 <ModalFooter bg={modalBg[colorMode]} mt={3}>
@@ -112,4 +111,4 @@ function TodoList({src, title, type, link}) {
     )
 };
 
-export default TodoList;
+export default JustPostIt;

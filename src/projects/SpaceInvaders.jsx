@@ -1,10 +1,12 @@
 import React, { useState } from "react"
-import todoListMain from "../images/todo-list/todo-list-main.png"
-import todoListSignup from "../images/todo-list/todo-list-signup.png"
+// import dontTouchTheWallInfo from "../images/dont-touch-the-wall/game_info.PNG"
+// import dontTouchTheWallPass from "../images/dont-touch-the-wall/game_pass.PNG"
 import { FaGithub, FaSearchPlus } from "react-icons/fa"
+import { MdCheckCircle } from "react-icons/md"
 import { Box, Flex, Image, Text, Button, Modal, ModalOverlay, ModalContent, ModalCloseButton, ModalFooter, ModalBody, ModalHeader, useDisclosure, Heading, useColorMode } from "@chakra-ui/react"
+import { UnorderedList, ListItem, ListIcon } from "@chakra-ui/react";
 
-function TodoList({src, title, type, link}) {
+function SpaceInvaders({src, title, type, link}) {
     const {isOpen, onOpen, onClose} = useDisclosure();
     const [isHovered, setIsHovered] = useState(false);
 
@@ -76,23 +78,33 @@ function TodoList({src, title, type, link}) {
                 </ModalHeader>
                 <ModalCloseButton />
                 <Flex justifyContent="center" m={3}>
-                        <Image src={todoListSignup} boxSize="45%" m={2} />
-                        <Image src={todoListMain} boxSize="45%" m={2} />
+                        <Image src={src} boxSize="45%" m={2} />
+                        <Image src={src} boxSize="45%" m={2} />
                 </Flex>
                 <ModalBody textAlign="justify" m={3} >
                     
-                    <Text>  Todo List is a web application that uses basic CRUD operations for accessing and storing users’ to-do lists. 
-                            This app is built on the React.js framework as the frontend and FastAPI as the backend. 
-                            The app features a user account system that each user can create and modify their own to-do lists. 
-                            OAuth 2.0 is applied so that the risks of securities are minimized.
+                    <Text>  Space Invaders is a classic arcade video game built using a functional programming language called Beginning Student Language (BSL).
+                            In the game, the space invaders keep randomly jamming into the screen. 
+                            As the guardian of the human race, use your tank and missiles to save us!
                     </Text>
                     <br />
-                    <Text>  I built this app as my side project to practice my full-stack web development skills. 
-                            Through the process, I better understand how frontend and backend are separated and how they are easily connected. 
-                            I also learned a bit of database design, as well as JWT authentication mechanism during the creation of the user account system. 
-                    </Text>
+                    <Text>  I completed this game as my final project in the online course “How to Code: Simple Data”. I learned a lot from this course, including:</Text>
+                    <UnorderedList>
+                        <ListItem>
+                            <ListIcon as={MdCheckCircle} color="green.500" />
+                            Functional programming paradigm
+                        </ListItem>
+                        <ListItem>
+                            <ListIcon as={MdCheckCircle} color="green.500" />
+                            Write useful tests for a program
+                        </ListItem>
+                        <ListItem>
+                            <ListIcon as={MdCheckCircle} color="green.500" />
+                            Domain analysis for game creation
+                        </ListItem>
+                    </UnorderedList>
                     <br />
-                    <Text>Hope you like the project! View my GitHub page to learn more.</Text>
+                    <Text>Hope you enjoy the game. Feel free to check my source code below.</Text>
                 </ModalBody>
 
                 <ModalFooter bg={modalBg[colorMode]} mt={3}>
@@ -112,4 +124,4 @@ function TodoList({src, title, type, link}) {
     )
 };
 
-export default TodoList;
+export default SpaceInvaders;
