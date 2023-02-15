@@ -1,17 +1,22 @@
 import React from "react"
 import logo from "../logo.png"
 import { MdLightMode, MdNightlight } from "react-icons/md"
-import { Flex, Spacer, Center, Heading, Text, Image, ButtonGroup, Button, useColorMode  } from "@chakra-ui/react"
+import { Flex, Box, Heading, Image, ButtonGroup, Button, useColorMode  } from "@chakra-ui/react"
 
 function Header() {
-
+    const name = "Ying Tu".split("");
     const { colorMode, toggleColorMode } = useColorMode();
     
     return (
-        <Flex alignItems="center">
-            <a href="#"><Image src={logo} alt="logo" boxSize="50px" m={1} /></a>
-            <Heading>Ying Tu</Heading>
-            <Spacer />
+        <Flex alignItems="center" justify="space-between">
+            <Flex alignItems="center">
+                <a href="#"><Image className="logo-image" src={logo} alt="logo" boxSize="3rem" m={1} /></a>
+                <Box>
+                    {name.map((word, index) => {
+                        return (<span className="logo span cursive color-lam" key={index}>{word}</span>);
+                    })}
+                </Box>
+            </Flex>
             <ButtonGroup>
                 {colorMode === "dark" ?
                     <Button
@@ -48,7 +53,7 @@ function Header() {
                     Contact
                 </Button>
                 <Button variant="solid"
-                        colorScheme="green"
+                        colorScheme="lam"
                         as="a"
                         href="https://drive.google.com/file/d/1QW_MzyBlSy3x5TZGu4lxouB-0IRuLjIl/view?usp=sharing"
                         target="_blank"

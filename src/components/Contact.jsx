@@ -3,21 +3,30 @@ import selfPortrait from "../images/Self-portrait.png"
 import { Flex, Box, Spacer, Center, Heading, Text, Image, ButtonGroup, Button } from "@chakra-ui/react"
 
 function Contacts() {
+    const sectionTitle = "Contact".split("");
+    const getInTouch = "Get in Touch?".split("");
+
     return (
-        <Box id="contact-section" textAlign="center">
-            <Flex justifyContent="flex-start" alignItems="center">
-                
-                <Heading mr={5}>Contact</Heading>
-                <Box height="0.1vh" width="30%" bg="gray.400" />
+        <Box id="contact-section" className="section-container" textAlign="center">
+            <Flex className="section-title-container">
+                <Box className="section-title-divider" bg="gray.400" />
+                <Box mx={5}>
+                    {sectionTitle.map((word, index) => {
+                        return (<span className="section-title span cursive color-lam" key={index}>{word}</span>);
+                    })}
+                </Box>
+                <Box className="section-title-divider" bg="gray.400" />
             </Flex>
-            <Center bg='blue.500'>
+            {getInTouch.map((word, index) => {
+                    return (<span className="subtitle span cursive color-lam" key={index}>{word}</span>);
+                })}
+            <Flex justify="center" m={5}>
                 <Image  src={selfPortrait} 
                         alt="home-photo"
                         borderRadius="full"
-                        boxSize="100px" 
+                        boxSize="10vw" 
                 />
-            </Center>
-            <Text>Welcome to checkout my social account:</Text>
+            </Flex>
             <ButtonGroup>
                 <Button as="a"
                         href="https://github.com/yingtu35">
@@ -38,15 +47,12 @@ function Contacts() {
                         href="https://www.instagram.com/orevo860305/">
                     Instagram
                 </Button>
-            </ButtonGroup>
-            <Text>Feel free to send me an email and have a chat!</Text>
-            <Box>
-                <Button as="a"
+                <Button colorScheme="yellow"
+                        as="a"
                         href="mailto:yingtu35@gmail.com">
                     Mail
                 </Button>
-            </Box>
-            
+            </ButtonGroup>      
         </Box>
     )
 }

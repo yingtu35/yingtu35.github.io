@@ -50,10 +50,8 @@ function TodoList({src, title, type, link}) {
                 justifyContent="center"
                 >
                     <Text
-                         fontWeight="bold"
-                         color="white"
+                         className="project-title"
                          opacity={isHovered? 1 : 0}
-                         transition="all 0.3s ease-in-out"
                     >
                             {title}
                     </Text>
