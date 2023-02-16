@@ -25,7 +25,7 @@
 }
 
 .cursive {
-  font-family: cursive;
+  font-family: Georgia, serif;
 }
 
 .title {
@@ -211,6 +211,7 @@
 .project-box {
   width: 30vw;
   background-color: #718096;
+  border:2px solid #718096;
   margin: 1vw;
   transition: all 0.3s ease-in-out;
 }

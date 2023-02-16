@@ -51,7 +51,8 @@ function ImageSlider({ slides, auto }) {
             {slides.map((slide, index) => {
                 return (
                     <Button onClick={() => setCurrentIdx(index)} 
-                            bg={index === currentIdx? "white.100" : "white.900"} 
+                            colorScheme="white"
+                            bg={index === currentIdx? "white.100" : "white.700"} 
                             borderRadius="full"
                             size="xs" 
                             key={`button_${index}`}

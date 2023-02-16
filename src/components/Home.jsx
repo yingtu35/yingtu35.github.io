@@ -13,6 +13,11 @@ function Home() {
 
     return (
         <Box id="homt-section" className="section-container">
+        {/* To remove after mobile version is supported */}
+        <Flex justify="center">
+            <Text fontSize="1.2em" color="red">Warning: Currently does not support mobile version! Updates coming.</Text>
+        </Flex>
+        {/* To remove after mobile version is supported */}
         <Flex justify="center">
             <Box width="50vw" m={3}>
                 {/* <Heading fontSize="6vw" className="color-lam">Hi, I'm Ying Tu</Heading> */}

@@ -10,23 +10,23 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 const theme = extendTheme({
   colors: {
     white: {
-      100: "#ffffff",
+      100: "#808080",
       200: "#fafafa",
-      300: "#f6f6f6",
+      300: "#808080",
       400: "#f1f1f1",
-      500: "#eaeaea",
-      600: "#e5e5e5",
+      500: "#808080",
+      600: "#808080",
       700: "#dfdfdf",
       800: "#d8d8d8",
       900: "#808080",
     },
     lam: {
-      100: "#20a785",
+      100: "#20a785", // dark mode default
       200: "#20a785",
-      300: "#32E8BA",
+      300: "#32E8BA", // dark mode hover
       400: "#32E8BA",
-      500: "#20a785",
-      600: "#1a8066",
+      500: "#20a785", // light mode default
+      600: "#1a8066", // light mode hover
       700: "#32E8BA",
       800: "#32E8BA",
       900: "#32E8BA",
