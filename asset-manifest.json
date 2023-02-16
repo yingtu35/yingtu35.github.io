@@ -1,30 +1,34 @@
 {
   "files": {
-    "main.css": "/static/css/main.8d3f08e7.css",
-    "main.js": "/static/js/main.d1dd60f6.js",
-    "static/media/Self-portrait.png": "/static/media/Self-portrait.94c863603dfe068c4841.png",
-    "static/media/image_3.jpg": "/static/media/image_3.f366441dfc5315ca9278.jpg",
-    "static/media/housing.jpg": "/static/media/housing.d0f81e7eac7fe713f44e.jpg",
-    "static/media/image_4.jpg": "/static/media/image_4.8396ef08fd53a6491f2c.jpg",
-    "static/media/image_5.jpg": "/static/media/image_5.8b7f2a684509cf9ab704.jpg",
-    "static/media/image_1.jpg": "/static/media/image_1.3eba32e4d48ba8afbceb.jpg",
-    "static/media/just-post-it.PNG": "/static/media/just-post-it.26ff261baf57e5a18da0.PNG",
-    "static/media/image_2.jpg": "/static/media/image_2.6c695e63c81670fa2759.jpg",
-    "static/media/just-post-it-input.PNG": "/static/media/just-post-it-input.4ee01d73528061caae4e.PNG",
+    "main.css": "/static/css/main.dccc577c.css",
+    "main.js": "/static/js/main.a1877b39.js",
+    "static/media/image_1.png": "/static/media/image_1.ff0f55e7f57271d39409.png",
+    "static/media/image_4.png": "/static/media/image_4.661f153dbbd57a5aa608.png",
+    "static/media/Self-portrait.png": "/static/media/Self-portrait.6f589703b57d953d8a20.png",
+    "static/media/image_2.png": "/static/media/image_2.74ab3f8e437b09e50a6e.png",
+    "static/media/housing.jpg": "/static/media/housing.9f22d04f1e9325308cba.jpg",
+    "static/media/image_3.jpg": "/static/media/image_3.845433a19be7a358bd98.jpg",
+    "static/media/image_5.jpg": "/static/media/image_5.14137c4bf6c5acca90ba.jpg",
+    "static/media/analysis.png": "/static/media/analysis.91f0bad4ba68a3f07e95.png",
     "static/media/todo-list-main.png": "/static/media/todo-list-main.ad30952b5e799ef897a8.png",
     "static/media/todo-list-signup.png": "/static/media/todo-list-signup.30f2ad83e7f0f12e1784.png",
+    "static/media/screenshot.png": "/static/media/screenshot.ad08df7edb5afbfa74df.png",
     "static/media/web-calculator.png": "/static/media/web-calculator.edf841b196e099f98d08.png",
-    "static/media/space-invaders.PNG": "/static/media/space-invaders.cbb6f7db2b239cbceaaf.PNG",
-    "static/media/game_pass.PNG": "/static/media/game_pass.edbc7b8edb5d08d0cb77.PNG",
-    "static/media/game_info.PNG": "/static/media/game_info.21fb47c6cd0b7c969cf8.PNG",
+    "static/media/loss.png": "/static/media/loss.ecc4714a2101612e5e51.png",
+    "static/media/gameover.PNG": "/static/media/gameover.cbb6f7db2b239cbceaaf.PNG",
+    "static/media/just-post-it.PNG": "/static/media/just-post-it.b0d351c532e80be721d0.PNG",
+    "static/media/just-post-it-input.PNG": "/static/media/just-post-it-input.d7ebee61be4abf88ac84.PNG",
+    "static/media/level_2.png": "/static/media/level_2.24f796c8a41d32866781.png",
+    "static/media/screenshot_2.png": "/static/media/screenshot_2.600a4c8489d1e7feb389.png",
+    "static/media/screenshot_1.png": "/static/media/screenshot_1.b1ffaca40866a022543d.png",
     "static/media/todo-list.png": "/static/media/todo-list.5e19db1a54bcfa9a646b.png",
     "static/media/game_menu.PNG": "/static/media/game_menu.dd3dfa687834ccc21dc6.PNG",
     "index.html": "/index.html",
-    "main.8d3f08e7.css.map": "/static/css/main.8d3f08e7.css.map",
-    "main.d1dd60f6.js.map": "/static/js/main.d1dd60f6.js.map"
+    "main.dccc577c.css.map": "/static/css/main.dccc577c.css.map",
+    "main.a1877b39.js.map": "/static/js/main.a1877b39.js.map"
   },
   "entrypoints": [
-    "static/css/main.8d3f08e7.css",
-    "static/js/main.d1dd60f6.js"
+    "static/css/main.dccc577c.css",
+    "static/js/main.a1877b39.js"
   ]
 }
