@@ -31,7 +31,7 @@ function Contacts() {
             <ButtonGroup>
                 <Button as="a"
                         href="https://github.com/yingtu35"
-                        size={buttonSize}>
+                        >
                     Github
                 </Button>
                 <Button colorScheme="linkedin"
