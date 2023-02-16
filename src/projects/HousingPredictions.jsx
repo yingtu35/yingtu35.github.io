@@ -1,6 +1,6 @@
 import React, { useState } from "react"
-// import dontTouchTheWallInfo from "../images/dont-touch-the-wall/game_info.PNG"
-// import dontTouchTheWallPass from "../images/dont-touch-the-wall/game_pass.PNG"
+import analysis from "../images/house-price-predictions/analysis.png"
+import loss from "../images/house-price-predictions/loss.png"
 import { FaGithub, FaSearchPlus } from "react-icons/fa"
 import { MdCheckCircle } from "react-icons/md"
 import { Box, Flex, Image, Text, Button, Modal, ModalOverlay, ModalContent, ModalCloseButton, ModalFooter, ModalBody, ModalHeader, useDisclosure, Heading, useColorMode } from "@chakra-ui/react"
@@ -14,7 +14,8 @@ function HousingPredictions({src, title, type, link}) {
     const modalBg = { light: "gray.600", dark: "gray.400"};
 
     return(
-        <Box as="button"
+        <Box className="project-box"
+             as="button"
              onClick={onOpen}
              onMouseEnter={() => setIsHovered(true)}
              onMouseLeave={() => setIsHovered(false)}
@@ -50,6 +51,7 @@ function HousingPredictions({src, title, type, link}) {
                 display="flex"
                 alignItems="center"
                 justifyContent="center"
+                backgroundColor="rgba(32, 167, 133, 0.9)"
                 >
                     <Text
                          className="project-title"
@@ -75,9 +77,9 @@ function HousingPredictions({src, title, type, link}) {
                     <Text textAlign="center" fontStyle="italic">{type}</Text>
                 </ModalHeader>
                 <ModalCloseButton />
-                <Flex justifyContent="center" m={3}>
-                        <Image src={src} boxSize="45%" m={2} />
-                        <Image src={src} boxSize="45%" m={2} />
+                <Flex justifyContent="center" alignItems="stretch" m={3}>
+                        <Image src={analysis} boxSize="45%" m={2} />
+                        <Image src={loss} boxSize="50%" m={2} />
                 </Flex>
                 <ModalBody textAlign="justify" m={3} >
                     

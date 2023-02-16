@@ -1,6 +1,6 @@
 import React, { useState } from "react"
-import dontTouchTheWallInfo from "../images/dont-touch-the-wall/game_info.PNG"
-import dontTouchTheWallPass from "../images/dont-touch-the-wall/game_pass.PNG"
+import level_1 from "../images/dont-touch-the-wall/level_1.png"
+import level_2 from "../images/dont-touch-the-wall/level_2.png"
 import { FaGithub, FaSearchPlus } from "react-icons/fa"
 import { Box, Flex, Image, Text, Button, Modal, ModalOverlay, ModalContent, ModalCloseButton, ModalFooter, ModalBody, ModalHeader, useDisclosure, Heading, useColorMode } from "@chakra-ui/react"
 
@@ -12,7 +12,8 @@ function DontTouchTheWall({src, title, type, link}) {
     const modalBg = { light: "gray.600", dark: "gray.400"};
 
     return(
-        <Box as="button"
+        <Box className="project-box"
+             as="button"
              onClick={onOpen}
              onMouseEnter={() => setIsHovered(true)}
              onMouseLeave={() => setIsHovered(false)}
@@ -48,6 +49,7 @@ function DontTouchTheWall({src, title, type, link}) {
                 display="flex"
                 alignItems="center"
                 justifyContent="center"
+                backgroundColor="rgba(32, 167, 133, 0.9)"
                 >
                     <Text
                          className="project-title"
@@ -74,8 +76,8 @@ function DontTouchTheWall({src, title, type, link}) {
                 </ModalHeader>
                 <ModalCloseButton />
                 <Flex justifyContent="center" m={3}>
-                        <Image src={dontTouchTheWallInfo} boxSize="45%" m={2} />
-                        <Image src={dontTouchTheWallPass} boxSize="45%" m={2} />
+                        <Image src={level_1} boxSize="45%" m={2} />
+                        <Image src={level_2} boxSize="45%" m={2} />
                 </Flex>
                 <ModalBody textAlign="justify" m={3} >
                     

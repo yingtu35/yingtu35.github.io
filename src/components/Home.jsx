@@ -8,7 +8,7 @@ function Home() {
     // 100vh = 869, 100vw = 1740
     // console.log(window.innerHeight, window.innerWidth);
     const title = "Hi, I'm Ying Tu".split("");
-    const subtitle = "Journey Never Stops".split("");
+    const subtitle = "Journey Never Ends".split("");
     const tags = "#CS #Passion #Learn".split("");
 
     return (

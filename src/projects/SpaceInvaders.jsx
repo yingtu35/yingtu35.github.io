@@ -1,6 +1,6 @@
 import React, { useState } from "react"
-// import dontTouchTheWallInfo from "../images/dont-touch-the-wall/game_info.PNG"
-// import dontTouchTheWallPass from "../images/dont-touch-the-wall/game_pass.PNG"
+import gameplay from "../images/space-invaders/screenshot_1.png"
+import gameover from "../images/space-invaders/gameover.PNG"
 import { FaGithub, FaSearchPlus } from "react-icons/fa"
 import { MdCheckCircle } from "react-icons/md"
 import { Box, Flex, Image, Text, Button, Modal, ModalOverlay, ModalContent, ModalCloseButton, ModalFooter, ModalBody, ModalHeader, useDisclosure, Heading, useColorMode } from "@chakra-ui/react"
@@ -14,7 +14,8 @@ function SpaceInvaders({src, title, type, link}) {
     const modalBg = { light: "gray.600", dark: "gray.400"};
 
     return(
-        <Box as="button"
+        <Box className="project-box"
+             as="button"
              onClick={onOpen}
              onMouseEnter={() => setIsHovered(true)}
              onMouseLeave={() => setIsHovered(false)}
@@ -50,6 +51,7 @@ function SpaceInvaders({src, title, type, link}) {
                 display="flex"
                 alignItems="center"
                 justifyContent="center"
+                backgroundColor="rgba(32, 167, 133, 0.9)"
                 >
                     <Text
                          className="project-title"
@@ -76,8 +78,8 @@ function SpaceInvaders({src, title, type, link}) {
                 </ModalHeader>
                 <ModalCloseButton />
                 <Flex justifyContent="center" m={3}>
-                        <Image src={src} boxSize="45%" m={2} />
-                        <Image src={src} boxSize="45%" m={2} />
+                        <Image src={gameplay} boxSize="40%" m={2} />
+                        <Image src={gameover} boxSize="40%" m={2} />
                 </Flex>
                 <ModalBody textAlign="justify" m={3} >
                     

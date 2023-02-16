@@ -12,7 +12,8 @@ function TodoList({src, title, type, link}) {
     const modalBg = { light: "gray.600", dark: "gray.400"};
 
     return(
-        <Box as="button"
+        <Box className="project-box"
+             as="button"
              onClick={onOpen}
              onMouseEnter={() => setIsHovered(true)}
              onMouseLeave={() => setIsHovered(false)}
@@ -48,6 +49,7 @@ function TodoList({src, title, type, link}) {
                 display="flex"
                 alignItems="center"
                 justifyContent="center"
+                backgroundColor="rgba(32, 167, 133, 0.9)"
                 >
                     <Text
                          className="project-title"

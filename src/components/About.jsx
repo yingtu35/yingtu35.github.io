@@ -9,29 +9,29 @@ function About() {
     return (
         <Box id="about-section" className="section-container">
             <Flex className="section-title-container">
-                <Box className="section-title-divider" bg="gray.400" />
-                <Box mx={5}>
+                <Box className="section-title-divider"  />
+                <Box className="section-title-box">
                     {sectionTitle.map((word, index) => {
                         return (<span className="section-title span cursive color-lam" key={index}>{word}</span>);
                     })}
                 </Box>
                 {/* <Heading mx={5}>About</Heading> */}
-                <Box className="section-title-divider" bg="gray.400" />
+                <Box className="section-title-divider"  />
             </Flex>
             
-            <Flex justify="center">
-                <Box width="40%" m={1}>
+            <Flex className="about-container">
+                <Box mx="2vw">
                     <ImageSlider slides={SliderData} auto={3500} />
                 </Box>
-                <Box width="40%" m={1}>
+                <Box width="33vw" mx="2vw">
                     <Box mb={1}>
-                        <Heading fontSize="3rem">Ying Tu (Daniel)</Heading>
+                        <Heading className="subtitle">Ying Tu (Daniel)</Heading>
                     </Box>
                     <Box textAlign="justify" mt={1}>
-                        <Text fontSize="1rem">Hi, my name is Ying Tu, I graduated from National Taiwan University (NTU).
+                        <Text className="content">Hi, my name is Ying Tu, I graduated from National Taiwan University (NTU).
                                             My goal is to become a software engineer.</Text>
                         <br />
-                        <Text fontSize="1rem">
+                        <Text className="content">
                             I have started self-studying computer science since 2022 after my graduation from NTU. 
                             I decided to change my career path to computer science because I notice computer science
                             has brought countless amazing technologies to the world, and it is still full of potential in the future!
@@ -46,7 +46,7 @@ function About() {
                             Below are some skills and technologies I am working with:
                         </Text>
                     </Box>
-                    <Box className="skill-list" m={1}>
+                    <Box className="skill-list content">
                         <List spacing={1}>
                             <ListItem>
                                 <ListIcon as={SiPython} />

@@ -1,6 +1,5 @@
 import React, { useState } from "react"
-// import dontTouchTheWallInfo from "../images/dont-touch-the-wall/game_info.PNG"
-// import dontTouchTheWallPass from "../images/dont-touch-the-wall/game_pass.PNG"
+import screenshot from "../images/web-calculator/screenshot.png"
 import { FaGithub, FaSearchPlus, FaCalculator } from "react-icons/fa"
 import { Box, Flex, Image, Text, Button, Modal, ModalOverlay, ModalContent, ModalCloseButton, ModalFooter, ModalBody, ModalHeader, useDisclosure, Heading, useColorMode, ButtonGroup } from "@chakra-ui/react"
 
@@ -12,7 +11,8 @@ function WebCalculator({src, title, type, link}) {
     const modalBg = { light: "gray.600", dark: "gray.400"};
 
     return(
-        <Box as="button"
+        <Box className="project-box"
+             as="button"
              onClick={onOpen}
              onMouseEnter={() => setIsHovered(true)}
              onMouseLeave={() => setIsHovered(false)}
@@ -48,11 +48,9 @@ function WebCalculator({src, title, type, link}) {
                 display="flex"
                 alignItems="center"
                 justifyContent="center"
+                backgroundColor="rgba(32, 167, 133, 0.9)"
                 >
-                    <Text
-                         className="project-title"
-                         opacity={isHovered? 1 : 0}
-                    >
+                    <Text className="project-title" opacity={isHovered? 1 : 0}>
                             {title}
                     </Text>
                 </Box>
@@ -74,8 +72,7 @@ function WebCalculator({src, title, type, link}) {
                 </ModalHeader>
                 <ModalCloseButton />
                 <Flex justifyContent="center" m={3}>
-                        <Image src={src} boxSize="45%" m={2} />
-                        <Image src={src} boxSize="45%" m={2} />
+                        <Image src={screenshot} boxSize="40%" m={2} />
                 </Flex>
                 <ModalBody textAlign="justify" m={3} >
                     
