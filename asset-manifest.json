@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/static/css/main.8d3f08e7.css",
+    "main.js": "/static/js/main.d1dd60f6.js",
+    "static/media/Self-portrait.png": "/static/media/Self-portrait.94c863603dfe068c4841.png",
+    "static/media/image_3.jpg": "/static/media/image_3.f366441dfc5315ca9278.jpg",
+    "static/media/housing.jpg": "/static/media/housing.d0f81e7eac7fe713f44e.jpg",
+    "static/media/image_4.jpg": "/static/media/image_4.8396ef08fd53a6491f2c.jpg",
+    "static/media/image_5.jpg": "/static/media/image_5.8b7f2a684509cf9ab704.jpg",
+    "static/media/image_1.jpg": "/static/media/image_1.3eba32e4d48ba8afbceb.jpg",
+    "static/media/just-post-it.PNG": "/static/media/just-post-it.26ff261baf57e5a18da0.PNG",
+    "static/media/image_2.jpg": "/static/media/image_2.6c695e63c81670fa2759.jpg",
+    "static/media/just-post-it-input.PNG": "/static/media/just-post-it-input.4ee01d73528061caae4e.PNG",
+    "static/media/todo-list-main.png": "/static/media/todo-list-main.ad30952b5e799ef897a8.png",
+    "static/media/todo-list-signup.png": "/static/media/todo-list-signup.30f2ad83e7f0f12e1784.png",
+    "static/media/web-calculator.png": "/static/media/web-calculator.edf841b196e099f98d08.png",
+    "static/media/space-invaders.PNG": "/static/media/space-invaders.cbb6f7db2b239cbceaaf.PNG",
+    "static/media/game_pass.PNG": "/static/media/game_pass.edbc7b8edb5d08d0cb77.PNG",
+    "static/media/game_info.PNG": "/static/media/game_info.21fb47c6cd0b7c969cf8.PNG",
+    "static/media/todo-list.png": "/static/media/todo-list.5e19db1a54bcfa9a646b.png",
+    "static/media/game_menu.PNG": "/static/media/game_menu.dd3dfa687834ccc21dc6.PNG",
+    "index.html": "/index.html",
+    "main.8d3f08e7.css.map": "/static/css/main.8d3f08e7.css.map",
+    "main.d1dd60f6.js.map": "/static/js/main.d1dd60f6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8d3f08e7.css",
+    "static/js/main.d1dd60f6.js"
+  ]
+}
