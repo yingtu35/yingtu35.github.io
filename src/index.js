@@ -9,6 +9,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 
 const theme = extendTheme({
   colors: {
+    light: "#F6D55C",
     white: {
       100: "#808080",
       200: "#fafafa",
@@ -42,7 +43,9 @@ const theme = extendTheme({
     }
   },
   config: {
-    disableTransitionOnChange: false
+    disableTransitionOnChange: false,
+    initialColorMode: 'dark',
+    useSystemColorMode: true,
   }
 });
 

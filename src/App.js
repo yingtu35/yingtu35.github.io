@@ -4,17 +4,19 @@ import About from "./components/About"
 import Projects from "./components/Projects"
 import Contact from "./components/Contact"
 import Header from "./components/Header"
-import Footer from './components/Footer';
+import Footer from './components/Footer'
+import BackToTopBtn from './components/BackToTopBtn';
 
 function App() {
   return (
-    <div className='container'>
+    <div className='App container'>
       <Header />
       <Home />
       <About />
       <Projects />
       <Contact />
       <Footer />
+      <BackToTopBtn />
     </div>
   )
 }

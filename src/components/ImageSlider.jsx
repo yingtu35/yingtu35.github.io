@@ -1,5 +1,4 @@
 import React, { useEffect, useRef, useState } from "react"
-import { SliderData } from "../data/SliderData"
 import { MdArrowBackIosNew, MdArrowForwardIos } from "react-icons/md"
 import { Image, HStack, Button, Flex, Box } from "@chakra-ui/react";
 
@@ -35,14 +34,17 @@ function ImageSlider({ slides, auto }) {
     
 
     return(
-        <Flex direction="column" alignItems="center" justifyContent="center">
-        <Box className="image-slider">
+        <Flex className="image-slider-container">
+        <Box className="image-slider-box">
             <MdArrowBackIosNew  className="left-arrow" onClick={prevSlide} />
             <MdArrowForwardIos className="right-arrow" onClick={nextSlide} />
             {slides.map((slide, index) => {
                 return (
                     <div className={index === currentIdx? "slide-active" : "slide"} key={index}>
-                        <Image src={slide.image} alt={slide.title} className="image" />
+                        <Image src={slide.image} 
+                               alt={slide.title} 
+                               className="image"
+                        />
                     </div>
                 );
             })}
@@ -50,15 +52,15 @@ function ImageSlider({ slides, auto }) {
         <HStack className="image-slider-controller" m={2}>
             {slides.map((slide, index) => {
                 return (
-                    <Button onClick={() => setCurrentIdx(index)} 
-                            colorScheme="white"
-                            bg={index === currentIdx? "white.100" : "white.700"} 
-                            borderRadius="full"
-                            size="xs" 
-                            key={`button_${index}`}
-                            className="slider-controller-button">
-                         
-                    </Button>
+                    <Box as="button"
+                         onClick={() => setCurrentIdx(index)}
+                         color="white"
+                         bg={index === currentIdx? "white.100" : "white.700"}
+                         width={['8px', '16px', '16px', '24px']}
+                         height={['8px', '16px', '16px', '24px']}
+                         borderRadius="100%">
+
+                    </Box>
                 )
             })}
         </HStack>

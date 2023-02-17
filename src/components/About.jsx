@@ -15,21 +15,20 @@ function About() {
                         return (<span className="section-title span cursive color-lam" key={index}>{word}</span>);
                     })}
                 </Box>
-                {/* <Heading mx={5}>About</Heading> */}
                 <Box className="section-title-divider"  />
             </Flex>
             
             <Flex className="about-container">
-                <Box mx="2vw">
+                <Box m={1}>
                     <ImageSlider slides={SliderData} auto={3500} />
                 </Box>
-                <Box width="33vw" mx="2vw">
+                <Box width="550px" m={1}>
                     <Box mb={1}>
                         <Heading className="subtitle">Ying Tu (Daniel)</Heading>
                     </Box>
                     <Box textAlign="justify" mt={1}>
-                        <Text className="content">Hi, my name is Ying Tu, I graduated from National Taiwan University (NTU).
-                                            My goal is to become a software engineer.</Text>
+                        <Text className="content">My name is Ying Tu, I have a master's degree at National Taiwan University (NTU).
+                                            My goal is to become a software engineer and create useful applications for people.</Text>
                         <br />
                         <Text className="content">
                             I have started self-studying computer science since 2022 after my graduation from NTU. 
@@ -38,12 +37,12 @@ function About() {
                             I wanted to bring my passion to what I believe can drive the world and create value for the society.
                             That's why I dive into CS!
                             <br /><br />
-                            My specific interest includes <b>software development</b> and <b>machine learning</b>.
+                            My specific interest includes <b>full-stack development</b> and <b>machine learning</b>.
                             I mostly create projects by myself and learned the techniques and skills from these projects.
-                            I have created multiple web applications and some machine learning projects
-                            (see the projects section below).
+                            I have created multiple web applications and some machine learning projects.<br/>
+                            (please check the projects section below).
                             <br /><br />
-                            Below are some skills and technologies I am working with:
+                            Below are skills and technologies I am working with:
                         </Text>
                     </Box>
                     <Box className="skill-list content">
