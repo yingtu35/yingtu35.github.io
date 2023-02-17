@@ -1,5 +1,5 @@
 import React from "react"
-import logo from "../logo.png"
+import logo from "../images/logo.png"
 import { MdLightMode, MdNightlight } from "react-icons/md"
 import { Flex, Box, Heading, Image, ButtonGroup, Button, useColorMode  } from "@chakra-ui/react"
 
@@ -11,11 +11,11 @@ function Header() {
         <Flex alignItems="center" justify="space-between">
             <Flex alignItems="center">
                 <a href="#"><Image className="logo-image" src={logo} alt="logo" boxSize="3rem" m={1} /></a>
-                <Box>
+                {/* <Box>
                     {name.map((word, index) => {
                         return (<span className="logo span cursive color-lam" key={index}>{word}</span>);
                     })}
-                </Box>
+                </Box> */}
             </Flex>
             <ButtonGroup>
                 {colorMode === "dark" ?
