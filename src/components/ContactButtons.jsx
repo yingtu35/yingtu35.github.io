@@ -14,13 +14,13 @@ function ContactButtons() {
                         <a className="contact-iconBtn" href="https://github.com/yingtu35" target="_blank">
                             <FaGithub />
                         </a>
-                        <a className="contact-iconBtn color-linkedin" href="https://github.com/yingtu35" target="_blank">
+                        <a className="contact-iconBtn color-linkedin" href="https://www.linkedin.com/in/ying-tu-06b208102/" target="_blank">
                             <FaLinkedin />
                         </a>
-                        <a className="contact-iconBtn color-facebook" href="https://github.com/yingtu35" target="_blank">
+                        <a className="contact-iconBtn color-facebook" href="https://www.facebook.com/profile.php?id=100000582214483" target="_blank">
                             <FaFacebook />
                         </a>
-                        <a className="contact-iconBtn color-instagram" href="https://github.com/yingtu35" target="_blank">
+                        <a className="contact-iconBtn color-instagram" href="https://www.instagram.com/orevo860305/" target="_blank">
                             <FaInstagram />
                         </a>
                     </Fragment>
