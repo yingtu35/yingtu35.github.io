@@ -1,7 +1,7 @@
-<p align="center">
+<div align="center">
 	<h1 align="center"><b>Ying Tu's Portfolio Website</b></h1>
-	<a href="https://yingtu35.github.io/" align="center">yingtu35.github.io</a><br>
-</p>
+	<a href="https://yingtu35.github.io/">yingtu35.github.io</a><br>
+</div>
 ## PC Version
 ![home-pc](https://user-images.githubusercontent.com/91551415/219528017-746ff31a-e225-4f28-a039-0e0a6fb085bd.png)
 
