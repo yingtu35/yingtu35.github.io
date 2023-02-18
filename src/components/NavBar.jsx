@@ -27,7 +27,7 @@ function NavBar() {
                                 as={IconButton}
                                 icon={<MdMenu />}
                                 variant="ghost" />
-                            <MenuList width="80vw" textAlign="center">
+                            <MenuList width="80vw">
                                 <MenuItem className="menu-item" as="a" href="#">Home</MenuItem>
                                 <MenuItem className="menu-item" as="a" href="#about-section">About</MenuItem>
                                 <MenuItem className="menu-item" as="a" href="#projects-section">Projects</MenuItem>
@@ -38,32 +38,23 @@ function NavBar() {
                 ) : (
             <ButtonGroup>
                 {colorMode === "dark" ?
-                    <Button variant="ghost" onClick={toggleColorMode}>
+                    <button className="navBtn navBtn1" onClick={toggleColorMode}>
                         <MdLightMode />
-                    </Button> 
+                    </button> 
                     :
-                    <Button variant="ghost" 
-                            onClick={toggleColorMode}>
+                    <button className="navBtn navBtn1" onClick={toggleColorMode}>
                         <MdNightlight />
-                    </Button>
+                    </button> 
                 }
-                <Button variant="ghost"  as="a" href="#">
-                    Home
-                </Button>
-                <Button variant="ghost" as="a" href="#about-section">
-                    About
-                </Button>
-                <Button variant="ghost" as="a" href="#projects-section">
-                    Projects
-                </Button>
-                <Button variant="ghost" as="a" href="#contact-section">
-                    Contact
-                </Button>
-                <Button variant="solid" colorScheme="lam" as="a" 
+                <a className="navBtn navBtn1" href="#">Home</a>
+                <a className="navBtn navBtn1" href="#about-section">About</a>
+                <a className="navBtn navBtn1" href="#projects-section">Projects</a>
+                <a className="navBtn navBtn1" href="#contact-section">Contact</a>
+                <a className="navBtn navBtn2"
                         href="https://drive.google.com/file/d/1QW_MzyBlSy3x5TZGu4lxouB-0IRuLjIl/view?usp=sharing" 
                         target="_blank">
-                    Resume
-                </Button>
+                            Resume
+                </a>
             </ButtonGroup>
                 )
             )}

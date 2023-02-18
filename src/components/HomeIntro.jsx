@@ -31,12 +31,12 @@ function HomeIntroPC() {
             <Box mt={4}>
                 <List>
                     <ListItem>
-                        <ListIcon as={SlDiamond} />
-                        <span className="content">Full-stack Development</span>
+                        <ListIcon as={SlDiamond} color="#20a785" />
+                        <span className="content color-lam">Full-stack Development</span>
                     </ListItem>
                     <ListItem>
-                        <ListIcon as={SlDiamond} />
-                        <span className="content">Machine Learning</span>
+                        <ListIcon as={SlDiamond} color="#20a785" />
+                        <span className="content color-lam">Machine Learning</span>
                     </ListItem>
                 </List>                     
             </Box>

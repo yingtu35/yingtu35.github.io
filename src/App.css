@@ -6,6 +6,7 @@
   display: flex;
   justify-content: center;
   font-size: 18px;
+  height: 50px;
 }
 
 .logo-image {
@@ -19,6 +20,50 @@
   transform: rotate(15deg);
   transition: all 0.3s ease-in-out;
 }
+
+.navBtn {
+  border-radius: 10px;
+  background: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.8s;
+  position: relative;
+  overflow: hidden;
+  color: inherit;
+}
+
+.navBtn::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  background-color: #20a785;
+  z-index: -1;
+  transition: 0.8s;
+}
+
+.navBtn1::before {
+  bottom: 0;
+  border-radius: 50% 50% 0 0;
+}
+
+.navBtn2::before {
+  top: 0;
+  border-radius: 0 0 50% 50%;
+  height: 180%;
+}
+
+.navBtn1:hover::before {
+  height: 180%;
+}
+
+.navBtn2:hover::before {
+  height: 0%;
+}
+
 
 
 .color-lam {
@@ -260,6 +305,19 @@
   cursor: pointer;
 }
 
+.backToTopBtn {
+  position: fixed;
+  bottom: 3vw;
+  right: 3vw;
+  text-align: center;
+  transition: all 0.2s ease-in-out;
+}
+
+.backToTopBtn:hover {
+  transform: translateY(-10%);
+  transition: all 0.2s ease-in-out;
+}
+
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .title {
     font-size: 60px;
@@ -289,7 +347,7 @@
   }
   
   .content {
-    font-size: 12px;
+    font-size: 16px;
   }
 
   .section-title {
@@ -301,12 +359,16 @@
   }
 
   .project-box{
-    width: 230px;
+    width: 300px;
   }
 
   .portrait-box:hover {
     transform: scale(1.05);
     transition: all 0.3s ease-in-out;
+  }
+
+  .skill-list {
+    column-count: 2;
   }
   
 }

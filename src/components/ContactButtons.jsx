@@ -11,18 +11,18 @@ function ContactButtons() {
                 {matches => matches ? (
                     // Mobile
                     <Fragment>
-                        <FaGithub className="contact-iconBtn"
-                                  as="a"
-                                  href="https://github.com/yingtu35" />
-                        <FaLinkedin className="contact-iconBtn color-linkedin" 
-                                    as="a"
-                                    href="https://www.linkedin.com/in/ying-tu-06b208102/"/>
-                        <FaFacebook className="contact-iconBtn color-facebook"
-                                    as="a"
-                                    href="https://www.facebook.com/profile.php?id=100000582214483" />
-                        <FaInstagram className="contact-iconBtn color-instagram"
-                                     as="a"
-                                     href="https://www.instagram.com/orevo860305/" />
+                        <a className="contact-iconBtn" href="https://github.com/yingtu35" target="_blank">
+                            <FaGithub />
+                        </a>
+                        <a className="contact-iconBtn color-linkedin" href="https://github.com/yingtu35" target="_blank">
+                            <FaLinkedin />
+                        </a>
+                        <a className="contact-iconBtn color-facebook" href="https://github.com/yingtu35" target="_blank">
+                            <FaFacebook />
+                        </a>
+                        <a className="contact-iconBtn color-instagram" href="https://github.com/yingtu35" target="_blank">
+                            <FaInstagram />
+                        </a>
                     </Fragment>
                 ) : (
                     // PC and tablet
@@ -35,21 +35,21 @@ function ContactButtons() {
                         </Button>
                         <Button colorScheme="linkedin"
                                 as="a"
-                                leftIcon={<FaLinkedin />}
+                                leftIcon={<FaLinkedin className="color-linkedin" />}
                                 size={["sm", "sm", "sm", "md", "md"]}
                                 href="https://www.linkedin.com/in/ying-tu-06b208102/">
                             Linkedin
                         </Button>
                         <Button colorScheme="facebook"
                                 as="a"
-                                leftIcon={<FaFacebook />}
+                                leftIcon={<FaFacebook className="color-facebook" />}
                                 size={["sm", "sm", "sm", "md", "md"]}
                                 href="https://www.facebook.com/profile.php?id=100000582214483">
                             Facebook
                         </Button>
                         <Button colorScheme="pink"
                                 as="a"
-                                leftIcon={<FaInstagram />}
+                                leftIcon={<FaInstagram className="color-instagram" />}
                                 size={["sm", "sm", "sm", "md", "md"]}
                                 href="https://www.instagram.com/orevo860305/">
                             Instagram

@@ -1,7 +1,6 @@
 import React, {Fragment} from "react"
 import Media from "react-media"
-import selfPortrait from "../images/Self-portrait.png"
-import { Flex, Heading, Text, Image, Box, List, ListItem, ListIcon, ButtonGroup, Button  } from "@chakra-ui/react"
+import { Flex, Box, } from "@chakra-ui/react"
 import HomeIntro from "./HomeIntro"
 import HomePhoto from "./HomePhoto"
 
