@@ -5,7 +5,7 @@ function Footer() {
     return (
         <Box textAlign="center" mb={5}>
             <Text className="color-lam" fontWeight="bold">Designed by Ying Tu. 2023<br />
-                    Version: 1.1
+                    Version: 1.1.1
             </Text>
         </Box>
         

@@ -2,7 +2,8 @@ import React from "react"
 import ImageSlider from "./ImageSlider"
 import { SliderData } from "../data/SliderData"
 import { Flex, Spacer, Center, Heading, Text, Box, ListItem, ListIcon, List  } from "@chakra-ui/react"
-import { SiPython, SiTensorflow, SiKeras, SiJava, SiJavascript, SiReact, SiGit } from "react-icons/si"
+import { SiPython, SiTensorflow, SiKeras, SiJava, SiJavascript, SiReact, SiGit, SiFastapi, SiDjango, SiHtml5, SiCss3 } from "react-icons/si"
+import { FaDatabase } from "react-icons/fa"
 import Media from "react-media"
 
 function ContentPC() {
@@ -89,24 +90,36 @@ function About() {
                                 Python
                             </ListItem>
                             <ListItem>
-                                <ListIcon as={SiJavascript} color="#20a785"/>
-                                JavaScript
-                            </ListItem>
-                            <ListItem>
-                                <ListIcon as={SiJava} color="#20a785"/>
-                                Java
-                            </ListItem>
-                            <ListItem>
-                                <ListIcon as={SiPython} color="#20a785"/>
+                                <ListIcon as={SiDjango} color="#20a785"/>
                                 Django
                             </ListItem>
                             <ListItem>
-                                <ListIcon as={SiPython} color="#20a785"/>
+                                <ListIcon as={SiFastapi} color="#20a785"/>
                                 FastAPI
+                            </ListItem>
+                            <ListItem>
+                                <ListIcon as={FaDatabase} color="#20a785"/>
+                                MySQL
                             </ListItem>
                             <ListItem>
                                 <ListIcon as={SiReact} color="#20a785"/>
                                 React
+                            </ListItem>
+                            <ListItem>
+                                <ListIcon as={SiJavascript} color="#20a785"/>
+                                JavaScript
+                            </ListItem>
+                            <ListItem>
+                                <ListIcon as={SiCss3} color="#20a785"/>
+                                CSS
+                            </ListItem>
+                            <ListItem>
+                                <ListIcon as={SiHtml5} color="#20a785"/>
+                                HTML
+                            </ListItem>
+                            <ListItem>
+                                <ListIcon as={SiJava} color="#20a785"/>
+                                Java
                             </ListItem>
                             <ListItem>
                                 <ListIcon as={SiTensorflow} color="#20a785"/>

@@ -1,6 +1,23 @@
 /* .App {
   background-color: bisque;
 } */
+.header-container {
+  position: fixed;
+  top: 0px;
+  right: 10%;
+  left: 10%;
+  justify-content: space-between;
+  align-items: center;
+  opacity: 0.9;
+  z-index: 10;
+  transition: 0.5s;
+  
+}
+
+.header-hidden {
+  transform: translateY(-100%);
+  transition: 0.5s;
+}
 
 .menu-item {
   display: flex;
