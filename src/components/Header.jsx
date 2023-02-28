@@ -10,7 +10,7 @@ function Header() {
     const [lastScrollY, setLastScrollY] = useState(window.scrollY);
 
     const controlNavBar = () => {
-        if (window.scrollY > lastScrollY) {
+        if (window.scrollY >= 0 && (window.scrollY > lastScrollY)) {
             setHide(true);
         } else{
             setHide(false);

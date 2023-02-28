@@ -23,6 +23,9 @@ function ContactButtons() {
                         <a className="contact-iconBtn color-instagram" href="https://www.instagram.com/orevo860305/" target="_blank">
                             <FaInstagram />
                         </a>
+                        <a className="contact-iconBtn color-gmail" href="mailto:yingtu35@gmail.com" target="_blank">
+                            <SiGmail />
+                        </a>
                     </Fragment>
                 ) : (
                     // PC and tablet

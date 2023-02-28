@@ -7,7 +7,7 @@ import HomePhoto from "./HomePhoto"
 function Home() {
 
     return (
-        <Box id="home-section" className="section-container">
+        <Box id="home-section" className="section-container" mt="15%">
         <Flex justify="center" wrap="wrap">
             <Media query="(max-width: 1200px)">
                 {matches => (

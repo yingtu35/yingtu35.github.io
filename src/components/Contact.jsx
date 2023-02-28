@@ -30,7 +30,7 @@ function Contacts() {
                 />
             </Flex>
             <ContactButtons />
-            <Media query="(max-width:767px)" render={() => <Text>Email: yingtu35@gmail.com</Text>} />
+            {/* <Media query="(max-width:767px)" render={() => <Text>Email: yingtu35@gmail.com</Text>} /> */}
         </Box>
     )
 }

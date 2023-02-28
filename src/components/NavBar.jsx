@@ -1,7 +1,7 @@
 import React from "react"
 import Media from "react-media"
 import { MdLightMode, MdNightlight, MdMenu } from "react-icons/md"
-import { Box, IconButton, Text, useColorMode } from "@chakra-ui/react"
+import { IconButton, useColorMode } from "@chakra-ui/react"
 import { ButtonGroup, Button } from "@chakra-ui/react"
 import { Menu, MenuButton, MenuItem, MenuList } from "@chakra-ui/react"
 
@@ -22,7 +22,7 @@ function NavBar() {
                                 <MdNightlight />
                             </Button>
                         }
-                        <Menu isLazy={true}>
+                        <Menu isLazy={false}>
                             <MenuButton
                                 as={IconButton}
                                 icon={<MdMenu />}
