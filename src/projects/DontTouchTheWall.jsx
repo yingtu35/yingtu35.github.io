@@ -4,6 +4,7 @@ import level_2 from "../images/dont-touch-the-wall/level_2.png"
 import { FaGithub, FaSearchPlus } from "react-icons/fa"
 import { Box, Flex, Image, Text, Button, Modal, ModalOverlay, ModalContent, ModalCloseButton, ModalFooter, ModalBody, ModalHeader, useDisclosure, Heading, useColorMode } from "@chakra-ui/react"
 
+// TODO: Maybe could integrate all projects component into one!
 function DontTouchTheWall({src, title, type, link}) {
     const {isOpen, onOpen, onClose} = useDisclosure();
     const [isHovered, setIsHovered] = useState(false);

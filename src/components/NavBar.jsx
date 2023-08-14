@@ -51,7 +51,7 @@ function NavBar() {
                 <a className="navBtn navBtn1" href="#projects-section">Projects</a>
                 <a className="navBtn navBtn1" href="#contact-section">Contact</a>
                 <a className="navBtn navBtn2"
-                        href="https://drive.google.com/file/d/1QW_MzyBlSy3x5TZGu4lxouB-0IRuLjIl/view?usp=sharing" 
+                        href="https://drive.google.com/file/d/1KWRD9asW4epCL_FIjP__2COv5SAC01dZ/view?usp=sharing" 
                         target="_blank">
                             Resume
                 </a>
