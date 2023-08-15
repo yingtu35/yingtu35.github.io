@@ -1,13 +1,23 @@
 {
   "files": {
-    "main.css": "/static/css/main.d5983452.css",
-    "main.js": "/static/js/main.0c2ce2d8.js",
+    "main.css": "/static/css/main.61d6b7ca.css",
+    "main.js": "/static/js/main.79fb3018.js",
+    "static/media/ChristmasMap1-min.png": "/static/media/ChristmasMap1-min.1188e03fe07128fea575.png",
+    "static/media/LetsChatLobby-min.png": "/static/media/LetsChatLobby-min.cd8c7763f4b5824a1968.png",
+    "static/media/LetsChatRoom-min.png": "/static/media/LetsChatRoom-min.4028f2d2c5cf2a5fdca4.png",
+    "static/media/ChristmasMap2-min.png": "/static/media/ChristmasMap2-min.444324602fc8c6c57349.png",
+    "static/media/rateRepoHome-min.png": "/static/media/rateRepoHome-min.6aa64e69c0f66aad4f97.png",
+    "static/media/rateRepoRepo-min.png": "/static/media/rateRepoRepo-min.d05eacae67b059675e00.png",
+    "static/media/rateRepoLogo-min.png": "/static/media/rateRepoLogo-min.8e9fd6c162842562c7c8.png",
+    "static/media/blogAppBlogs.png": "/static/media/blogAppBlogs.8fea7b0c19c0f1d0ebd2.png",
     "static/media/image_1.png": "/static/media/image_1.ff0f55e7f57271d39409.png",
     "static/media/image_4.png": "/static/media/image_4.661f153dbbd57a5aa608.png",
     "static/media/Self-portrait.png": "/static/media/Self-portrait.6f589703b57d953d8a20.png",
+    "static/media/blogAppLogin.png": "/static/media/blogAppLogin.789adb0f9f716872c21d.png",
+    "static/media/ChristmasLogo.png": "/static/media/ChristmasLogo.ef6424536534b55284ff.png",
     "static/media/image_2.png": "/static/media/image_2.74ab3f8e437b09e50a6e.png",
-    "static/media/housing.jpg": "/static/media/housing.9f22d04f1e9325308cba.jpg",
     "static/media/image_3.jpg": "/static/media/image_3.845433a19be7a358bd98.jpg",
+    "static/media/LetsChatLogo.png": "/static/media/LetsChatLogo.86d1550beef20bce8a98.png",
     "static/media/image_5.jpg": "/static/media/image_5.14137c4bf6c5acca90ba.jpg",
     "static/media/analysis.png": "/static/media/analysis.91f0bad4ba68a3f07e95.png",
     "static/media/todo-list-main.png": "/static/media/todo-list-main.ad30952b5e799ef897a8.png",
@@ -20,15 +30,15 @@
     "static/media/just-post-it-input.PNG": "/static/media/just-post-it-input.d7ebee61be4abf88ac84.PNG",
     "static/media/level_2.png": "/static/media/level_2.24f796c8a41d32866781.png",
     "static/media/screenshot_2.png": "/static/media/screenshot_2.600a4c8489d1e7feb389.png",
+    "static/media/blogAppLogo.png": "/static/media/blogAppLogo.9a392c4f4a18fdd9444a.png",
     "static/media/screenshot_1.png": "/static/media/screenshot_1.b1ffaca40866a022543d.png",
-    "static/media/todo-list.png": "/static/media/todo-list.5e19db1a54bcfa9a646b.png",
     "static/media/game_menu.PNG": "/static/media/game_menu.dd3dfa687834ccc21dc6.PNG",
     "index.html": "/index.html",
-    "main.d5983452.css.map": "/static/css/main.d5983452.css.map",
-    "main.0c2ce2d8.js.map": "/static/js/main.0c2ce2d8.js.map"
+    "main.61d6b7ca.css.map": "/static/css/main.61d6b7ca.css.map",
+    "main.79fb3018.js.map": "/static/js/main.79fb3018.js.map"
   },
   "entrypoints": [
-    "static/css/main.d5983452.css",
-    "static/js/main.0c2ce2d8.js"
+    "static/css/main.61d6b7ca.css",
+    "static/js/main.79fb3018.js"
   ]
 }
