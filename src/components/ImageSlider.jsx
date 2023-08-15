@@ -40,7 +40,7 @@ function ImageSlider({ slides, auto }) {
             <MdArrowForwardIos className="right-arrow" onClick={nextSlide} />
             {slides.map((slide, index) => {
                 return (
-                    <div className={index === currentIdx? "slide-active" : "slide"} key={index}>
+                    <div className={index === currentIdx? "slide-active" : "slide"} key={slide.image}>
                         <Image src={slide.image} 
                                alt={slide.title} 
                                className="image"
@@ -58,8 +58,9 @@ function ImageSlider({ slides, auto }) {
                          bg={index === currentIdx? "white.100" : "white.700"}
                          width={['8px', '16px', '16px', '24px']}
                          height={['8px', '16px', '16px', '24px']}
-                         borderRadius="100%">
-
+                         borderRadius="100%"
+                         key={slide.image}
+                         >
                     </Box>
                 )
             })}

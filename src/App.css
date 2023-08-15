@@ -114,11 +114,11 @@
 }
 
 .subtitle {
-  font-size: 3vw;
+  font-size: 2vw;
 }
 
 .tags {
-  font-size: 2vw;
+  font-size: 1.5vw;
 }
 
 .content {
@@ -296,11 +296,22 @@
   column-count: 3;
 }
 
+.projects-table-container {
+  margin: 80px;
+  justify-content: center;
+}
+
 .projects-container {
   justify-content: center;
   align-items: center;
   flex-direction: row;
   flex-wrap: wrap;
+}
+
+.projects-all {
+  justify-content: center;
+  align-items: center;
+  margin-top: 5%;
 }
 
 .project-box {

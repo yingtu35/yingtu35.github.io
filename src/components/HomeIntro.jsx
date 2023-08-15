@@ -3,10 +3,11 @@ import { Text, Box, List, ListItem, ListIcon, ButtonGroup, Button } from "@chakr
 import { SlDiamond } from "react-icons/sl"
 import { FiLinkedin, FiGithub } from "react-icons/fi"
 import Media from "react-media";
+import { selfIntro, resume } from "../data/self-introduction.js"
 
 function HomeIntroPC() {
     const title = "Hi, I'm Ying Tu".split("");
-    const subtitle = "Journey Never Ends".split("");
+    const subtitle = "CS graduate student at USC".split("");
     const tags = "#CS #Passion #Learn".split("");
     return (
         <Box width={['40vw','40vw','40vw','35vw','35vw']} m={1}>
@@ -22,10 +23,9 @@ function HomeIntroPC() {
                 return (<span className="tags span cursive color-lam" key={index}>{word}</span>);
             })}
             <Box mt={4}>
-                <Text className="content">Born in 1997. My CS journey started in 2022 and now continuing.<br />
-                    Currently, I am looking to build more projects and accumulate my experience.
+                <Text className="content">{selfIntro}
                     <br /><br />
-                    My focus is mainly on: 
+                    Most interested in: 
                 </Text>
             </Box>
             <Box mt={4}>
@@ -36,7 +36,7 @@ function HomeIntroPC() {
                     </ListItem>
                     <ListItem>
                         <ListIcon as={SlDiamond} color="#20a785" />
-                        <span className="content color-lam">Machine Learning</span>
+                        <span className="content color-lam">Software Engineering</span>
                     </ListItem>
                 </List>                     
             </Box>
@@ -69,7 +69,7 @@ function HomeIntroPC() {
 function HomeIntroMobile() {
     const title = "Ying Tu".split("");
     const tag1 = "◆Full-stack Development".split("");
-    const tag2 = "◆Machine Learning".split("");
+    const tag2 = "◆Software Engineering".split("");
     return(
         <Box width="800px" m={1} textAlign="center">
             {title.map((word, index) => {
@@ -80,7 +80,7 @@ function HomeIntroMobile() {
                 return (<span className="subtitle span cursive color-lam" key={index}>{word}</span>);
             })} */}
             <Box height="100px"></Box>
-            <Text className="tags">My specialization:</Text>
+            <Text className="tags">Interested in:</Text>
             {tag1.map((word, index) => {
                 return (<span className="tags span cursive color-lam" key={index}>{word}</span>);
             })}
@@ -91,7 +91,7 @@ function HomeIntroMobile() {
             <br/><br />
             <Button variant="solid" as="a" 
                     size='lg'
-                    href="https://drive.google.com/file/d/1QW_MzyBlSy3x5TZGu4lxouB-0IRuLjIl/view?usp=sharing" 
+                    href={resume} 
                     target="_blank">
                 Check out my resume
             </Button>

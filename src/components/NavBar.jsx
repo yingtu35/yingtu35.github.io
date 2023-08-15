@@ -4,6 +4,7 @@ import { MdLightMode, MdNightlight, MdMenu } from "react-icons/md"
 import { IconButton, useColorMode } from "@chakra-ui/react"
 import { ButtonGroup, Button } from "@chakra-ui/react"
 import { Menu, MenuButton, MenuItem, MenuList } from "@chakra-ui/react"
+import { resume } from "../data/self-introduction.js"
 
 function NavBar() {
     const { colorMode, toggleColorMode } = useColorMode();
@@ -51,8 +52,9 @@ function NavBar() {
                 <a className="navBtn navBtn1" href="#projects-section">Projects</a>
                 <a className="navBtn navBtn1" href="#contact-section">Contact</a>
                 <a className="navBtn navBtn2"
-                        href="https://drive.google.com/file/d/1KWRD9asW4epCL_FIjP__2COv5SAC01dZ/view?usp=sharing" 
-                        target="_blank">
+                        href={resume} 
+                        target="_blank"
+                        rel="noreferrer">
                             Resume
                 </a>
             </ButtonGroup>
