@@ -119,6 +119,39 @@ export const projects = [
 ]
 
 export const moreProjects = [
+  // TODO: change description of eBay Search app and Youtube-Clone"
+  {
+    title: "eBay Search Mobile App",
+    type: "Mobile Application",
+    createdAt: "Dec. 2023",
+    src: [todoListSignup, todoListMain],
+    description: `Todo List is a web application that uses basic CRUD operations for accessing and storing users' to-do lists. 
+    This app is built on the React.js framework as the frontend and FastAPI as the backend. 
+    The app features a user account system that each user can create and modify their own to-do lists. 
+    OAuth 2.0 is applied so that the risks of securities are minimized.`,
+    bulletpoints: [
+      "full-stack web development with React and FastAPI",
+      "JWT authentication",
+    ],
+    footer: "Got something to do? Use TodoList!",
+    link: "https://github.com/yingtu35/eBay_Search_app"
+  },
+  {
+    title: "Youtube Clone",
+    type: "Web Application",
+    createdAt: "Sep. 2023",
+    src: [todoListSignup, todoListMain],
+    description: `Todo List is a web application that uses basic CRUD operations for accessing and storing users' to-do lists. 
+    This app is built on the React.js framework as the frontend and FastAPI as the backend. 
+    The app features a user account system that each user can create and modify their own to-do lists. 
+    OAuth 2.0 is applied so that the risks of securities are minimized.`,
+    bulletpoints: [
+      "full-stack web development with React and FastAPI",
+      "JWT authentication",
+    ],
+    footer: "Got something to do? Use TodoList!",
+    link: "https://github.com/yingtu35/youtube-clone"
+  },
   {
     title: "TodoList",
     type: "Web Application",
