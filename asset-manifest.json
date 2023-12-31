@@ -1,10 +1,13 @@
 {
   "files": {
     "main.css": "/static/css/main.61d6b7ca.css",
-    "main.js": "/static/js/main.9a36b95b.js",
+    "main.js": "/static/js/main.1ce33aa9.js",
     "static/media/ChristmasMap1-min.png": "/static/media/ChristmasMap1-min.1188e03fe07128fea575.png",
     "static/media/LetsChatLobby-min.png": "/static/media/LetsChatLobby-min.cd8c7763f4b5824a1968.png",
     "static/media/LetsChatRoom-min.png": "/static/media/LetsChatRoom-min.4028f2d2c5cf2a5fdca4.png",
+    "static/media/search-form-min.png": "/static/media/search-form-min.7f8111f9547647752118.png",
+    "static/media/product-detail-min.png": "/static/media/product-detail-min.a203704af8fd1ac0d66d.png",
+    "static/media/search-result-min.png": "/static/media/search-result-min.7c7ad9ff74a668dd14cf.png",
     "static/media/ChristmasMap2-min.png": "/static/media/ChristmasMap2-min.444324602fc8c6c57349.png",
     "static/media/rateRepoHome-min.png": "/static/media/rateRepoHome-min.6aa64e69c0f66aad4f97.png",
     "static/media/rateRepoRepo-min.png": "/static/media/rateRepoRepo-min.d05eacae67b059675e00.png",
@@ -35,10 +38,10 @@
     "static/media/game_menu.PNG": "/static/media/game_menu.dd3dfa687834ccc21dc6.PNG",
     "index.html": "/index.html",
     "main.61d6b7ca.css.map": "/static/css/main.61d6b7ca.css.map",
-    "main.9a36b95b.js.map": "/static/js/main.9a36b95b.js.map"
+    "main.1ce33aa9.js.map": "/static/js/main.1ce33aa9.js.map"
   },
   "entrypoints": [
     "static/css/main.61d6b7ca.css",
-    "static/js/main.9a36b95b.js"
+    "static/js/main.1ce33aa9.js"
   ]
 }
