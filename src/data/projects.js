@@ -1,3 +1,7 @@
+// eBay Search
+import ebaySearchHome from "../images/eBay-search/search-form-min.png"
+import ebaySearchResult from "../images/eBay-search/search-result-min.png"
+import ebaySearchProduct from "../images/eBay-search/product-detail-min.png"
 // BlogApp
 import blogAppLogo from "../images/blog-app/blogAppLogo.png"
 import blogAppLogin from "../images/blog-app/blogAppLogin.png"
@@ -17,11 +21,11 @@ import level_2 from "../images/dont-touch-the-wall/level_2.png"
 // Web Calculator
 import webCalculatorImage from "../images/web-calculator/web-calculator.png"
 import calculatorImage from "../images/web-calculator/screenshot.png"
+
 // Christmas Attractions Map
 import christmasMapLogo from "../images/christmas-map/ChristmasLogo.png"
 import christmasMap1 from "../images/christmas-map/ChristmasMap1-min.png"
 import christmasMap2 from "../images/christmas-map/ChristmasMap2-min.png"
-
 // House Prediction
 import analysis from "../images/house-price-predictions/analysis.png"
 import loss from "../images/house-price-predictions/loss.png"
@@ -39,10 +43,26 @@ import spaceInvaderImage from "../images/space-invaders/screenshot_2.png"
 
 export const projects = [
   {
+    title: "eBay Search Mobile App",
+    type: "Mobile Application",
+    createdAt: "Dec. 2023",
+    logo: ebaySearchHome,
+    src: [ebaySearchResult, ebaySearchProduct],
+    description: `As a course project, eBay Search Mobile app is a android mobile application for searching products on eBay. 
+    The app features a customized search form and easy-to-view product page for product information. A wish list is also available for users to save their favorite products.`,
+    bulletpoints: [
+      "Android app development with Java",
+      "REST API for handling request",
+    ],
+    footer: "Credits to Chi-Ting Hou for helping me with the project.",
+    link: "https://github.com/yingtu35/eBay_Search_app"
+  },
+  {
     title: "Blog App",
     type: "Web Application",
     logo: blogAppLogo,
     src: [blogAppLogin, blogAppBlogs],
+    createdAt: "Apr. 2023",
     description: "Wanna share your blogs? You have come to thr right place! Blog App is a awesome blog platform to share yourself with the world!",
     bulletpoints: [
       "Created a full-stack application with React, Express.js, Node.js, and MongoDB for users to view, post, and share blogs",
@@ -57,6 +77,7 @@ export const projects = [
     type: "Mobile Application",
     logo: rateRepositoryLogo,
     src: [rateRepositoryHome, rateRepositoryRepo],
+    createdAt: "Jun. 2023",
     description: "Rate Repository is a mobile application to search, view, rate, comment GitHub repositories (currently offline) with a single touch.",
     bulletpoints: [
       "Designed a front-end view using React Native and Apollo Client to search, rate, comment, and link to mock GitHub repositories",
@@ -103,39 +124,10 @@ export const projects = [
     footer: "Have a try at the calculator, I am sure you will be pleased!",
     link: "https://github.com/yingtu35/Web-Calculator"
   },
-  {
-    title: "Christmas Attractions Map",
-    type: "Desktop application",
-    logo: christmasMapLogo,
-    src: [christmasMap1, christmasMap2],
-    description: "Christmas Attractions Map is a team project of the Fall 2021 ccClub online Python courses. It features a map rich of Christmas Attractions in Taiwan.",
-    bulletpoints: [
-      "Led a team of four members to develop a Christmas Attractions-oriented map in Taiwan using Selenium, Folium, and wxPython",
-      "Assigned tasks and orchestrated collaboration by verifying data coherence; Completed project one week ahead of schedule",
-    ],
-    footer: "Let's find out where to go on Christmas!",
-    link: "https://github.com/yingtu35/Christmas-Attractions-Map"
-  },
 ]
 
 export const moreProjects = [
-  // TODO: change description of eBay Search app and Youtube-Clone"
-  {
-    title: "eBay Search Mobile App",
-    type: "Mobile Application",
-    createdAt: "Dec. 2023",
-    src: [todoListSignup, todoListMain],
-    description: `Todo List is a web application that uses basic CRUD operations for accessing and storing users' to-do lists. 
-    This app is built on the React.js framework as the frontend and FastAPI as the backend. 
-    The app features a user account system that each user can create and modify their own to-do lists. 
-    OAuth 2.0 is applied so that the risks of securities are minimized.`,
-    bulletpoints: [
-      "full-stack web development with React and FastAPI",
-      "JWT authentication",
-    ],
-    footer: "Got something to do? Use TodoList!",
-    link: "https://github.com/yingtu35/eBay_Search_app"
-  },
+  // TODO: change description of Youtube-Clone"
   {
     title: "Youtube Clone",
     type: "Web Application",
@@ -233,5 +225,18 @@ export const moreProjects = [
     footer: `Hope you enjoy the game. Feel free to check my source code below.`,
     link: "https://github.com/yingtu35/Space-Invaders"
   },
-
+  {
+    title: "Christmas Attractions Map",
+    type: "Desktop application",
+    logo: christmasMapLogo,
+    src: [christmasMap1, christmasMap2],
+    createdAt: "Jan. 2022",
+    description: "Christmas Attractions Map is a team project of the Fall 2021 ccClub online Python courses. It features a map rich of Christmas Attractions in Taiwan.",
+    bulletpoints: [
+      "Led a team of four members to develop a Christmas Attractions-oriented map in Taiwan using Selenium, Folium, and wxPython",
+      "Assigned tasks and orchestrated collaboration by verifying data coherence; Completed project one week ahead of schedule",
+    ],
+    footer: "Let's find out where to go on Christmas!",
+    link: "https://github.com/yingtu35/Christmas-Attractions-Map"
+  },
 ]
