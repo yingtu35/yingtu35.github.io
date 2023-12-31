@@ -1,9 +1,13 @@
 import { Flex, TableContainer, Table, TableCaption, Thead, Tbody, Tfoot, Tr, Th, Td, Button } from "@chakra-ui/react"
 import { projects, moreProjects } from "../data/projects.js"
 
+// TODO: add a search bar to search for projects
+// TODO: add a filter to filter projects by type
+// TODO: add a sort function to sort projects by date, type, etc.
+// TODO: add a pagination to show 10 projects per page
 const AllProjects = () => {
   const allProjects = projects.concat(moreProjects);
-  console.log(allProjects)
+  // console.log(allProjects)
   return (
     <Flex className="projects-table-container">
       <TableContainer sx={{flexGrow: 1}}>
