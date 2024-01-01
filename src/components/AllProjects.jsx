@@ -1,9 +1,18 @@
 import React, { useState } from "react";
 import Select from "react-select";
-import { Box, Input} from "@chakra-ui/react";
-import { Flex, TableContainer, Table, TableCaption, Thead, Tbody, Tfoot, Tr, Th, Td, Button } from "@chakra-ui/react"
+import { Input, InputGroup, InputLeftElement } from "@chakra-ui/react";
+import { FaSearch } from "react-icons/fa";
+import { Box, Flex, TableContainer, Table, TableCaption, Thead, Tbody, Tfoot, Tr, Th, Td, Button } from "@chakra-ui/react"
 import debounce from 'lodash.debounce';
 import { projects, moreProjects } from "../data/projects.js"
+import { formatDateWithMonthAbbreviation } from "../utils/date.js";
+
+const customStyles = {
+  option: (provided, state) => ({
+    ...provided,
+    color: state.isSelected ? "black" : "gray",
+  }),
+};
 
 const sortOptions = [
   { value: "option1", label: "Dates (new to old)" },
@@ -13,6 +22,7 @@ const sortOptions = [
 
 // TODO: add a pagination to show 10 projects per page
 const AllProjects = () => {
+  const sectionTitle = "All Projects".split("");
   const [searchTitle, setSearchTitle] = useState("");
   const [selectedType, setSelectedType] = useState({ value: "All", label: "All" });
   const [selectedSort, setSelectedSort] = useState({ value: "option1", label: "Dates (new to old)" });
@@ -56,21 +66,43 @@ const AllProjects = () => {
     typesFilteredProjects.sort((a, b) => a.type.localeCompare(b.type));
   return (
     <Box>
-      <Input 
-        placeholder="Search projects"
-        onChange={onSearchTitleChange}
-        />
-      <Select 
-        placeholder="Select a type"
-        value={selectedType}
-        options={typesOptions}
-        onChange={onSelectTypeChange} 
-      />
-      <Select 
-        placeholder="Order by"
-        options={sortOptions}
-        onChange={onSelectSortChange}
-      />
+      <Flex className="section-title-container" style={{margin: '5px 0'}}>
+                {/* <Box className="section-title-divider" /> */}
+                <Box className="section-title-box" style={{width: '300px'}}>
+                    {sectionTitle.map((word, index) => {
+                        return (<span className="section-title span cursive color-lam" key={index}>{word}</span>);
+                    })}
+                </Box>
+                {/* <Box className="section-title-divider" /> */}
+            </Flex>
+      <Flex className="projects-table-action-bar">
+        <Box width="50%">
+          <Select
+            styles={customStyles}
+            placeholder="Select a type"
+            value={selectedType}
+            options={typesOptions}
+            onChange={onSelectTypeChange} 
+          />
+        </Box>
+        <Box width="50%">
+          <Select 
+            styles={customStyles}
+            placeholder="Order by"
+            value={selectedSort}
+            options={sortOptions}
+            onChange={onSelectSortChange}
+          />
+        </Box>
+        <InputGroup width="100%">
+          <InputLeftElement pointerEvents="none" children={<FaSearch color='gray' />} />
+          <Input
+            size="lg"
+            placeholder="Search projects"
+            onChange={onSearchTitleChange}
+            />
+        </InputGroup>
+      </Flex>
       <Flex className="projects-table-container">
         <TableContainer sx={{flexGrow: 1}}>
           <Table size="lg" variant='striped' colorScheme='gray'>
@@ -79,6 +111,7 @@ const AllProjects = () => {
               <Tr>
                 <Th>Project</Th>
                 <Th>Type</Th>
+                <Th>Created at</Th>
                 <Th>Link</Th>
               </Tr>
             </Thead>
@@ -87,6 +120,7 @@ const AllProjects = () => {
                 <Tr key={project.title}>
                   <Td>{project.title}</Td>
                   <Td>{project.type}</Td>
+                  <Td>{formatDateWithMonthAbbreviation(project.createdAt)}</Td>
                   <Td>
                     <Button>
                       <a 
@@ -104,6 +138,7 @@ const AllProjects = () => {
               <Tr>
                 <Th>Project</Th>
                 <Th>Type</Th>
+                <Th>Created at</Th>
                 <Th>Link</Th>
               </Tr>
             </Tfoot>
