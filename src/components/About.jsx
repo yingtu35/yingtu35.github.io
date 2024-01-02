@@ -1,7 +1,7 @@
 import React from "react"
 import ImageSlider from "./ImageSlider"
 import { SliderData } from "../data/SliderData"
-import { Flex, Spacer, Center, Heading, Text, Box, ListItem, ListIcon, List  } from "@chakra-ui/react"
+import { Flex, Heading, Text, Box, ListItem, ListIcon, List  } from "@chakra-ui/react"
 import Media from "react-media"
 import { aboutContent, aboutTechnicalSkills, aboutTitle } from "../data/self-introduction"
 

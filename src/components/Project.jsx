@@ -10,7 +10,7 @@ function Project({project}) {
     const {isOpen, onOpen, onClose} = useDisclosure();
     const [isHovered, setIsHovered] = useState(false);
 
-    const { colorMode, toggleColorMode } = useColorMode();
+    const { colorMode } = useColorMode();
     const modalBg = { light: "gray.600", dark: "gray.400"};
 
     return(

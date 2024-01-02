@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import Select from "react-select";
 import { Input, InputGroup, InputLeftElement } from "@chakra-ui/react";
-import { FaSearch } from "react-icons/fa";
-import { Box, Flex, TableContainer, Table, TableCaption, Thead, Tbody, Tfoot, Tr, Th, Td, Button } from "@chakra-ui/react"
+import { Box, Flex } from "@chakra-ui/react"
+import { SearchIcon } from "@chakra-ui/icons";
 import debounce from 'lodash.debounce';
 import { projects, moreProjects } from "../data/projects.js"
-import { formatDateWithMonthAbbreviation } from "../utils/date.js";
+import ProjectPagination from "./ProjectPagination.jsx";
 
 const customStyles = {
   option: (provided, state) => ({
@@ -65,7 +65,7 @@ const AllProjects = () => {
     typesFilteredProjects.sort((a, b) => a.createdAt - b.createdAt) :
     typesFilteredProjects.sort((a, b) => a.type.localeCompare(b.type));
   return (
-    <Box>
+    <Box position="relative">
       <Flex className="section-title-container" style={{margin: '5px 0'}}>
                 {/* <Box className="section-title-divider" /> */}
                 <Box className="section-title-box" style={{width: '300px'}}>
@@ -76,6 +76,17 @@ const AllProjects = () => {
                 {/* <Box className="section-title-divider" /> */}
             </Flex>
       <Flex className="projects-table-action-bar">
+      <InputGroup width="100%">
+          <InputLeftElement pointerEvents="none" children={<SearchIcon color='gray' />} />
+          <Input
+            size="md"
+            placeholder="Search projects"
+            onChange={onSearchTitleChange}
+            bg='white'
+            color='black'
+            _placeholder={{ color: 'gray' }}
+            />
+        </InputGroup>
         <Box width="50%">
           <Select
             styles={customStyles}
@@ -94,57 +105,8 @@ const AllProjects = () => {
             onChange={onSelectSortChange}
           />
         </Box>
-        <InputGroup width="100%">
-          <InputLeftElement pointerEvents="none" children={<FaSearch color='gray' />} />
-          <Input
-            size="lg"
-            placeholder="Search projects"
-            onChange={onSearchTitleChange}
-            />
-        </InputGroup>
       </Flex>
-      <Flex className="projects-table-container">
-        <TableContainer sx={{flexGrow: 1}}>
-          <Table size="lg" variant='striped' colorScheme='gray'>
-            {/* <TableCaption>Imperial to metric conversion factors</TableCaption> */}
-            <Thead>
-              <Tr>
-                <Th>Project</Th>
-                <Th>Type</Th>
-                <Th>Created at</Th>
-                <Th>Link</Th>
-              </Tr>
-            </Thead>
-            <Tbody>
-              {sortedProjects.map((project) => (
-                <Tr key={project.title}>
-                  <Td>{project.title}</Td>
-                  <Td>{project.type}</Td>
-                  <Td>{formatDateWithMonthAbbreviation(project.createdAt)}</Td>
-                  <Td>
-                    <Button>
-                      <a 
-                        href={project.link} 
-                        target="_blank"
-                        rel="noreferrer">
-                            GitHub
-                      </a>
-                    </Button>
-                  </Td>
-                </Tr>
-              ))}
-            </Tbody>
-            <Tfoot>
-              <Tr>
-                <Th>Project</Th>
-                <Th>Type</Th>
-                <Th>Created at</Th>
-                <Th>Link</Th>
-              </Tr>
-            </Tfoot>
-          </Table>
-        </TableContainer>
-      </Flex>
+      <ProjectPagination projects={sortedProjects} />
     </Box>
   )
 }

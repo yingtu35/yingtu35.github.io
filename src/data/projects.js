@@ -44,7 +44,7 @@ import spaceInvaderImage from "../images/space-invaders/screenshot_2.png"
 export const projects = [
   {
     title: "eBay Search Mobile App",
-    type: "Mobile Application",
+    type: "Mobile",
     createdAt: new Date(2023, 12),
     logo: ebaySearchHome,
     src: [ebaySearchResult, ebaySearchProduct],
@@ -59,7 +59,7 @@ export const projects = [
   },
   {
     title: "Blog App",
-    type: "Web Application",
+    type: "Web",
     logo: blogAppLogo,
     src: [blogAppLogin, blogAppBlogs],
     createdAt: new Date(2023, 4),
@@ -74,7 +74,7 @@ export const projects = [
   },
   {
     title: "Rate Repository",
-    type: "Mobile Application",
+    type: "Mobile",
     logo: rateRepositoryLogo,
     src: [rateRepositoryHome, rateRepositoryRepo],
     createdAt: new Date(2023, 6),
@@ -88,7 +88,7 @@ export const projects = [
   },
   {
     title: "Let's Chat",
-    type: "Web Application",
+    type: "Web",
     logo: letsChatLogo,
     src: [letsChatLobby, letsChatRoom],
     createdAt: new Date(2023, 3),
@@ -102,7 +102,7 @@ export const projects = [
   },
   {
     title: "Don't Touch the Wall",
-    type: "Hack-computer-specific game",
+    type: "Game",
     logo: DontTouchTheWallLogo,
     src: [level_1, level_2],
     createdAt: new Date(2022, 7),
@@ -116,7 +116,7 @@ export const projects = [
   },
   {
     title: "Web Calculator",
-    type: "Web Application",
+    type: "Web",
     logo: webCalculatorImage,
     src: [calculatorImage],
     createdAt: new Date(2023, 1),
@@ -133,7 +133,7 @@ export const moreProjects = [
   // TODO: change description of Youtube-Clone"
   {
     title: "Youtube Clone",
-    type: "Web Application",
+    type: "Web",
     createdAt: new Date(2023, 9),
     src: [todoListSignup, todoListMain],
     description: `Todo List is a web application that uses basic CRUD operations for accessing and storing users' to-do lists. 
@@ -149,7 +149,7 @@ export const moreProjects = [
   },
   {
     title: "TodoList",
-    type: "Web Application",
+    type: "Web",
     createdAt: new Date(2022, 12),
     src: [todoListSignup, todoListMain],
     description: `Todo List is a web application that uses basic CRUD operations for accessing and storing users' to-do lists. 
@@ -165,7 +165,7 @@ export const moreProjects = [
   },
   {
     title: "JustPostIt",
-    type: "Web Application",
+    type: "Web",
     createdAt: new Date(2022, 12),
     logo: justPostItLogo,
     src: [justPostItInput],
@@ -183,7 +183,7 @@ export const moreProjects = [
   },
   {
     title: "Housing Prediction",
-    type: "Machine Learning",
+    type: "ML",
     createdAt: new Date(2022, 10),
     src: [analysis, loss],
     description: "This is a self-motivated project to predict the house prices from 1,500 houses with each having 72 features. In the project, I significantly enhanced my skills in:",
@@ -198,7 +198,7 @@ export const moreProjects = [
   },
   {
     title: "Music Paradise",
-    type: "Web Application",
+    type: "Web",
     createdAt: new Date(2022, 11),
     src: [],
     description: `Music Paradise is a collaborative music controlling web application
@@ -230,7 +230,7 @@ export const moreProjects = [
   },
   {
     title: "Christmas Attractions Map",
-    type: "Desktop application",
+    type: "Desktop",
     logo: christmasMapLogo,
     src: [christmasMap1, christmasMap2],
     createdAt: new Date(2022, 1),
