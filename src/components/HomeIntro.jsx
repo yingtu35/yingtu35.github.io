@@ -76,8 +76,6 @@ function HomeIntroPC() {
 function HomeIntroMobile() {
     const title = homeMobileTitle.split("");
     const subtitle = homeSubtitle.split("");
-    const tag1 = "◆Full-stack Development".split("");
-    const tag2 = "◆Software Engineering".split("");
     return(
         <Box width="800px" m={1} textAlign="center">
             {title.map((word, index) => {

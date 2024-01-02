@@ -44,8 +44,8 @@ import spaceInvaderImage from "../images/space-invaders/screenshot_2.png"
 export const projects = [
   {
     title: "eBay Search Mobile App",
-    type: "Mobile Application",
-    createdAt: "Dec. 2023",
+    type: "Mobile",
+    createdAt: new Date(2023, 12),
     logo: ebaySearchHome,
     src: [ebaySearchResult, ebaySearchProduct],
     description: `As a course project, eBay Search Mobile app is a android mobile application for searching products on eBay. 
@@ -59,10 +59,10 @@ export const projects = [
   },
   {
     title: "Blog App",
-    type: "Web Application",
+    type: "Web",
     logo: blogAppLogo,
     src: [blogAppLogin, blogAppBlogs],
-    createdAt: "Apr. 2023",
+    createdAt: new Date(2023, 4),
     description: "Wanna share your blogs? You have come to thr right place! Blog App is a awesome blog platform to share yourself with the world!",
     bulletpoints: [
       "Created a full-stack application with React, Express.js, Node.js, and MongoDB for users to view, post, and share blogs",
@@ -74,10 +74,10 @@ export const projects = [
   },
   {
     title: "Rate Repository",
-    type: "Mobile Application",
+    type: "Mobile",
     logo: rateRepositoryLogo,
     src: [rateRepositoryHome, rateRepositoryRepo],
-    createdAt: "Jun. 2023",
+    createdAt: new Date(2023, 6),
     description: "Rate Repository is a mobile application to search, view, rate, comment GitHub repositories (currently offline) with a single touch.",
     bulletpoints: [
       "Designed a front-end view using React Native and Apollo Client to search, rate, comment, and link to mock GitHub repositories",
@@ -88,9 +88,10 @@ export const projects = [
   },
   {
     title: "Let's Chat",
-    type: "Web Application",
+    type: "Web",
     logo: letsChatLogo,
     src: [letsChatLobby, letsChatRoom],
+    createdAt: new Date(2023, 3),
     description: "Lets-Chat is a web application built on React and Flask. Using WebSocket protocol, users can chat easily in chat rooms they create or from other users.",
     bulletpoints: [
       "Built a full-stack chatting app with React for frontend design, SocketIO for bidirectional communication, Flask and MySQL for backend and database",
@@ -101,9 +102,10 @@ export const projects = [
   },
   {
     title: "Don't Touch the Wall",
-    type: "Hack-computer-specific game",
+    type: "Game",
     logo: DontTouchTheWallLogo,
     src: [level_1, level_2],
+    createdAt: new Date(2022, 7),
     description: "Don't Touch The Wall is a game built to challenge your abilities of judgment, speed, and experience! You have to move the ball from the starting line to the end without touching any of the walls in the game. Also, be careful of the timer! The game has a total of 3 levels and the difficulty gets crazy level after level. Can you pass all of them?",
     bulletpoints: [
       "Used Object-oriented programming language Jack to build the game",
@@ -114,9 +116,10 @@ export const projects = [
   },
   {
     title: "Web Calculator",
-    type: "Web Application",
+    type: "Web",
     logo: webCalculatorImage,
     src: [calculatorImage],
+    createdAt: new Date(2023, 1),
     description: "This app features a simple web calculator written in HTML, CSS, and vanilla JavaScript. It supports basic arithmetic calculations, including addition, subtraction, multiplication, and division. It also supports the toggle positive/negative button and percent button. The logic of the calculator is meant to mimic the iPhone built-in calculator, but I add a \"backspace\" button to enhance the usability of the calculator.",
     bulletpoints: [
       "Designed a full-fledged calculator with HTML, CSS for displaying pages, and JavaScript for complex logic",
@@ -130,8 +133,8 @@ export const moreProjects = [
   // TODO: change description of Youtube-Clone"
   {
     title: "Youtube Clone",
-    type: "Web Application",
-    createdAt: "Sep. 2023",
+    type: "Web",
+    createdAt: new Date(2023, 9),
     src: [todoListSignup, todoListMain],
     description: `Todo List is a web application that uses basic CRUD operations for accessing and storing users' to-do lists. 
     This app is built on the React.js framework as the frontend and FastAPI as the backend. 
@@ -146,8 +149,8 @@ export const moreProjects = [
   },
   {
     title: "TodoList",
-    type: "Web Application",
-    createdAt: "Dec. 2022",
+    type: "Web",
+    createdAt: new Date(2022, 12),
     src: [todoListSignup, todoListMain],
     description: `Todo List is a web application that uses basic CRUD operations for accessing and storing users' to-do lists. 
     This app is built on the React.js framework as the frontend and FastAPI as the backend. 
@@ -162,8 +165,8 @@ export const moreProjects = [
   },
   {
     title: "JustPostIt",
-    type: "Web Application",
-    createdAt: "Dec. 2022",
+    type: "Web",
+    createdAt: new Date(2022, 12),
     logo: justPostItLogo,
     src: [justPostItInput],
     description: `Just Post It is a web application that helps you remember tasks, schedules, homework assignments, meeting appointments, etc 
@@ -180,8 +183,8 @@ export const moreProjects = [
   },
   {
     title: "Housing Prediction",
-    type: "Machine Learning",
-    createdAt: "Jan. 2023",
+    type: "ML",
+    createdAt: new Date(2022, 10),
     src: [analysis, loss],
     description: "This is a self-motivated project to predict the house prices from 1,500 houses with each having 72 features. In the project, I significantly enhanced my skills in:",
     bulletpoints: [
@@ -195,8 +198,8 @@ export const moreProjects = [
   },
   {
     title: "Music Paradise",
-    type: "Web Application",
-    createdAt: "Dec. 2022",
+    type: "Web",
+    createdAt: new Date(2022, 11),
     src: [],
     description: `Music Paradise is a collaborative music controlling web application
     You can be a host, create a room, and invite your friends to join by sharing the room code.
@@ -212,7 +215,7 @@ export const moreProjects = [
     title: "Space Invaders",
     type: "Game",
     logo: spaceInvaderImage,
-    createdAt: "July 2022",
+    createdAt: new Date(2022, 7),
     src: [gameplay, gameover],
     description: `Space Invaders is a classic arcade video game built using a functional programming language called Beginning Student Language (BSL).
     In the game, the space invaders keep randomly jamming into the screen. 
@@ -227,10 +230,10 @@ export const moreProjects = [
   },
   {
     title: "Christmas Attractions Map",
-    type: "Desktop application",
+    type: "Desktop",
     logo: christmasMapLogo,
     src: [christmasMap1, christmasMap2],
-    createdAt: "Jan. 2022",
+    createdAt: new Date(2022, 1),
     description: "Christmas Attractions Map is a team project of the Fall 2021 ccClub online Python courses. It features a map rich of Christmas Attractions in Taiwan.",
     bulletpoints: [
       "Led a team of four members to develop a Christmas Attractions-oriented map in Taiwan using Selenium, Folium, and wxPython",

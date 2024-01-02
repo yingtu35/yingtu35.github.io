@@ -3,13 +3,14 @@ import { FaGithub, FaSearchPlus } from "react-icons/fa"
 import { MdCheckCircle } from "react-icons/md"
 import { Box, Flex, Image, Text, Button, Modal, ModalOverlay, ModalContent, ModalCloseButton, ModalFooter, ModalBody, ModalHeader, useDisclosure, Heading, useColorMode } from "@chakra-ui/react"
 import { List, ListItem, ListIcon } from "@chakra-ui/react";
+import { formatDateWithMonthAbbreviation } from "../utils/date";
 
 function Project({project}) {
-    const { title, type, logo, src, description, bulletpoints, footer, link } = project;
+    const { title, type, logo, src, description, createdAt, bulletpoints, footer, link } = project;
     const {isOpen, onOpen, onClose} = useDisclosure();
     const [isHovered, setIsHovered] = useState(false);
 
-    const { colorMode, toggleColorMode } = useColorMode();
+    const { colorMode } = useColorMode();
     const modalBg = { light: "gray.600", dark: "gray.400"};
 
     return(
@@ -73,7 +74,10 @@ function Project({project}) {
                 <ModalContent>
                 <ModalHeader bg={modalBg[colorMode]}>
                     <Heading variant="h1" textAlign="center">{title}</Heading>
-                    <Text textAlign="center" fontStyle="italic">{type}</Text>
+                    <Flex justifyContent="center" alignItems="center" gap="20px">
+                        <Text textAlign="center" fontStyle="italic">{type}</Text>
+                        <Text textAlign="center" fontStyle="italic">{formatDateWithMonthAbbreviation(createdAt)}</Text>
+                    </Flex>
                 </ModalHeader>
                 <ModalCloseButton />
                 <Flex justifyContent="center" alignItems="stretch" m={3}>
