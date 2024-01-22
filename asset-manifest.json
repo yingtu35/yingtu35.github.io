@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.1cb06ac2.css",
-    "main.js": "/static/js/main.c3a0ebea.js",
+    "main.js": "/static/js/main.f03a237f.js",
     "static/media/Self-portrait.png": "/static/media/Self-portrait.c0361478a4b3b71012cb.png",
     "static/media/ChristmasMap1-min.png": "/static/media/ChristmasMap1-min.1188e03fe07128fea575.png",
     "static/media/LetsChatLobby-min.png": "/static/media/LetsChatLobby-min.cd8c7763f4b5824a1968.png",
@@ -14,6 +14,7 @@
     "static/media/rateRepoRepo-min.png": "/static/media/rateRepoRepo-min.d05eacae67b059675e00.png",
     "static/media/rateRepoLogo-min.png": "/static/media/rateRepoLogo-min.8e9fd6c162842562c7c8.png",
     "static/media/blogAppBlogs.png": "/static/media/blogAppBlogs.8fea7b0c19c0f1d0ebd2.png",
+    "static/media/Resume_Ying_Tu.pdf": "/static/media/Resume_Ying_Tu.d419d71303659ab331ce.pdf",
     "static/media/image_1.png": "/static/media/image_1.ff0f55e7f57271d39409.png",
     "static/media/image_4.png": "/static/media/image_4.661f153dbbd57a5aa608.png",
     "static/media/blogAppLogin.png": "/static/media/blogAppLogin.789adb0f9f716872c21d.png",
@@ -38,10 +39,10 @@
     "static/media/game_menu.PNG": "/static/media/game_menu.dd3dfa687834ccc21dc6.PNG",
     "index.html": "/index.html",
     "main.1cb06ac2.css.map": "/static/css/main.1cb06ac2.css.map",
-    "main.c3a0ebea.js.map": "/static/js/main.c3a0ebea.js.map"
+    "main.f03a237f.js.map": "/static/js/main.f03a237f.js.map"
   },
   "entrypoints": [
     "static/css/main.1cb06ac2.css",
-    "static/js/main.c3a0ebea.js"
+    "static/js/main.f03a237f.js"
   ]
 }
