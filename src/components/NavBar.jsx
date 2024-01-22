@@ -4,7 +4,7 @@ import { MdLightMode, MdNightlight, MdMenu } from "react-icons/md"
 import { IconButton, useColorMode } from "@chakra-ui/react"
 import { ButtonGroup, Button } from "@chakra-ui/react"
 import { Menu, MenuButton, MenuItem, MenuList } from "@chakra-ui/react"
-import { resume } from "../data/self-introduction.js"
+import resume from "../files/Resume_Ying_Tu.pdf"
 
 function NavBar() {
     const { colorMode, toggleColorMode } = useColorMode();

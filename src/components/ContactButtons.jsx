@@ -11,19 +11,19 @@ function ContactButtons() {
                 {matches => matches ? (
                     // Mobile
                     <Fragment>
-                        <a className="contact-iconBtn" href="https://github.com/yingtu35" target="_blank">
+                        <a className="contact-iconBtn" href="https://github.com/yingtu35" target="_blank" rel="noreferrer">
                             <FaGithub />
                         </a>
-                        <a className="contact-iconBtn color-linkedin" href="https://www.linkedin.com/in/ying-tu-06b208102/" target="_blank">
+                        <a className="contact-iconBtn color-linkedin" href="https://www.linkedin.com/in/yingtu/" target="_blank" rel="noreferrer">
                             <FaLinkedin />
                         </a>
-                        <a className="contact-iconBtn color-facebook" href="https://www.facebook.com/profile.php?id=100000582214483" target="_blank">
+                        <a className="contact-iconBtn color-facebook" href="https://www.facebook.com/profile.php?id=100000582214483" target="_blank" rel="noreferrer">
                             <FaFacebook />
                         </a>
-                        <a className="contact-iconBtn color-instagram" href="https://www.instagram.com/orevo860305/" target="_blank">
+                        <a className="contact-iconBtn color-instagram" href="https://www.instagram.com/yingtu35/" target="_blank" rel="noreferrer">
                             <FaInstagram />
                         </a>
-                        <a className="contact-iconBtn color-gmail" href="mailto:yingtu35@gmail.com" target="_blank">
+                        <a className="contact-iconBtn color-gmail" href="mailto:yingtu35@gmail.com" target="_blank" rel="noreferrer">
                             <SiGmail />
                         </a>
                     </Fragment>
