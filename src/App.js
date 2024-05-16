@@ -1,13 +1,14 @@
 import './App.css';
 import { Routes, Route, Navigate } from "react-router-dom"
 import AllProjects from "./components/AllProjects"
-import Home from "./components/Home"
-import About from "./components/About"
-import Projects from "./components/Projects"
-import Contact from "./components/Contact"
+import Home from "./components/Home/Home"
+import About from "./components/About/About"
+import Projects from "./components/Projects/Projects"
+import Contact from "./components/Contact/Contact"
 import Header from "./components/Header"
 import Footer from './components/Footer'
 import BackToTopBtn from './components/BackToTopBtn';
+import Experiences from './components/Experiences/Experiences';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
             <Header />
             <Home />
             <About />
+            <Experiences />
             <Projects />
             <Contact />
           </>

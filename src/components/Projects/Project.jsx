@@ -3,7 +3,7 @@ import { FaGithub, FaSearchPlus } from "react-icons/fa"
 import { MdCheckCircle } from "react-icons/md"
 import { Box, Flex, Image, Text, Button, Modal, ModalOverlay, ModalContent, ModalCloseButton, ModalFooter, ModalBody, ModalHeader, useDisclosure, Heading, useColorMode } from "@chakra-ui/react"
 import { List, ListItem, ListIcon } from "@chakra-ui/react";
-import { formatDateWithMonthAbbreviation } from "../utils/date";
+import { formatDateWithMonthAbbreviation } from "../../utils/date";
 
 function Project({project}) {
     const { title, type, logo, src, description, createdAt, bulletpoints, footer, link } = project;
@@ -22,7 +22,7 @@ function Project({project}) {
              position="relative"
              _hover={{bg: 'rgba(0, 0, 0, 0.5)'}}
         >
-            <Image src={logo} opacity={isHovered? 0.3:1} transition="all 0.3s ease-in-out" />
+            <Image src={logo} opacity={isHovered? 0.3:1} transition="all 0.3s ease-in-out" loading="lazy" />
             {isHovered ? (
                 <>
                 <Box

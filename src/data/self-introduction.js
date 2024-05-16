@@ -12,7 +12,7 @@ export const homeMobileTitle = "Ying Tu";
 
 
 export const selfIntro = `A passionate learner with rich experience in full-stack development.
-Currently seeking Summer 2024 internship opportunities`
+Currently seeking Summer 2025 internship opportunities`
 
 export const resume = "https://drive.google.com/file/d/1xh-KnVLm4aGa4K9lRmCAz5IsJvojwNtE/view?usp=sharing"
 
@@ -28,105 +28,105 @@ export const aboutContent = [
   journey as a junior programmer, and began building projects one by one. I accumulated various knowledge and skills
   along the path, specifically in full-stack development and software engineering.`,
 
-  `I am actively seeking internship opportunities for summer 2024, I believe I can bring what I have into wherever I go, and grow to become a better software engineer while
+  `I am actively seeking internship opportunities for summer 2025, I believe I can bring what I have into wherever I go, and grow to become a better software engineer while
   helping others as well!`,
 ]
 
 export const aboutTechnicalSkills = [
-  {
-      skill: "Python",
-      icon: SiPython,
-  },
-  {
-    skill: "JavaScript",
-    icon: SiJavascript,
-  },
-  {
-    skill: "TypeScript",
-    icon: SiTypescript,
-  },
-  {
-      skill: "Java",
-      icon: SiJava,
-  },
-  {
-    skill: "C",
-    icon: SiC,
-},
-{
-    skill: "Linux",
-    icon: SiLinux,
-},
-{
-    skill: "Next.js",
-    icon: SiNextdotjs,
-},
-  {
-      skill: "React",
-      icon: SiReact,
-  },
-  {
-      skill: "Jest",
-      icon: SiJest,
-  },
-  {
-      skill: "Android Studio",
-      icon: SiAndroidstudio,
-  },
-  {
-      skill: "Html5",
-      icon: SiHtml5,
-  },
-  {
-      skill: "CSS",
-      icon: SiCss3,
-  },
-  {
+    {
+        skill: "Python",
+        icon: SiPython,
+    },
+    {
+        skill: "JavaScript",
+        icon: SiJavascript,
+    },
+    {
+        skill: "TypeScript",
+        icon: SiTypescript,
+    },
+    {
+        skill: "Java",
+        icon: SiJava,
+    },
+    {
+        skill: "C",
+        icon: SiC,
+    },
+    {
+        skill: "Linux",
+        icon: SiLinux,
+    },
+    {
+        skill: "Next.js",
+        icon: SiNextdotjs,
+    },
+    {
+        skill: "React",
+        icon: SiReact,
+    },
+    {
+        skill: "Jest",
+        icon: SiJest,
+    },
+    {
+        skill: "Android Studio",
+        icon: SiAndroidstudio,
+    },
+    {
+        skill: "Html5",
+        icon: SiHtml5,
+    },
+    {
+        skill: "CSS",
+        icon: SiCss3,
+    },
+    {
         skill: "Tailwind CSS",
         icon: SiTailwindcss,
-  },
-  {
-      skill: "Express.js",
-      icon: SiExpress,
-  },
-  {
-      skill: "Node.js",
-      icon: SiNodedotjs,
-  },
-  {
-      skill: "Flask",
-      icon: SiFlask,
+    },
+    {
+        skill: "Express.js",
+        icon: SiExpress,
+    },
+    {
+        skill: "Node.js",
+        icon: SiNodedotjs,
+    },
+    {
+        skill: "Flask",
+        icon: SiFlask,
     },
     {
         skill: "Django",
         icon: SiDjango,
     },
-  {
-      skill: "MongoDB",
-      icon: SiMongodb,
-  },
-  {
-      skill: "MySQL",
-      icon: SiMysql,
-  },
-  {
-      skill: "Git",
-      icon: SiGit,
-  },
-  {
-      skill: "GitHub Actions",
-      icon: SiGithubactions,
-  },
-  {
-      skill: "Docker",
-      icon: SiDocker,
-  },
-  {
-      skill: "Graphql",
-      icon: SiGraphql,
-  },
-  {
-      skill: "AWS",
-      icon: SiAmazonaws,
-  },
+    {
+        skill: "MongoDB",
+        icon: SiMongodb,
+    },
+    {
+        skill: "MySQL",
+        icon: SiMysql,
+    },
+    {
+        skill: "Git",
+        icon: SiGit,
+    },
+    {
+        skill: "GitHub Actions",
+        icon: SiGithubactions,
+    },
+    {
+        skill: "Docker",
+        icon: SiDocker,
+    },
+    {
+        skill: "Graphql",
+        icon: SiGraphql,
+    },
+    {
+        skill: "AWS",
+        icon: SiAmazonaws,
+    },
 ]
