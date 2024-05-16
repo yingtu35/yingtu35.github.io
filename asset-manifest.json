@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.1cb06ac2.css",
-    "main.js": "/static/js/main.8ea3bfdf.js",
+    "main.css": "/static/css/main.8f0e3548.css",
+    "main.js": "/static/js/main.130b8db8.js",
     "static/media/Self-portrait.png": "/static/media/Self-portrait.c0361478a4b3b71012cb.png",
     "static/media/ChristmasMap1-min.png": "/static/media/ChristmasMap1-min.1188e03fe07128fea575.png",
     "static/media/LetsChatLobby-min.png": "/static/media/LetsChatLobby-min.cd8c7763f4b5824a1968.png",
@@ -14,7 +14,7 @@
     "static/media/rateRepoRepo-min.png": "/static/media/rateRepoRepo-min.d05eacae67b059675e00.png",
     "static/media/rateRepoLogo-min.png": "/static/media/rateRepoLogo-min.8e9fd6c162842562c7c8.png",
     "static/media/blogAppBlogs.png": "/static/media/blogAppBlogs.8fea7b0c19c0f1d0ebd2.png",
-    "static/media/Resume_Ying_Tu.pdf": "/static/media/Resume_Ying_Tu.bf5b5f7e864604759e1d.pdf",
+    "static/media/Resume_Ying_Tu.pdf": "/static/media/Resume_Ying_Tu.acf0d68bf859e6dc751e.pdf",
     "static/media/image_1.png": "/static/media/image_1.ff0f55e7f57271d39409.png",
     "static/media/image_4.png": "/static/media/image_4.661f153dbbd57a5aa608.png",
     "static/media/blogAppLogin.png": "/static/media/blogAppLogin.789adb0f9f716872c21d.png",
@@ -41,11 +41,11 @@
     "static/media/screenshot_1.png": "/static/media/screenshot_1.b1ffaca40866a022543d.png",
     "static/media/game_menu.PNG": "/static/media/game_menu.dd3dfa687834ccc21dc6.PNG",
     "index.html": "/index.html",
-    "main.1cb06ac2.css.map": "/static/css/main.1cb06ac2.css.map",
-    "main.8ea3bfdf.js.map": "/static/js/main.8ea3bfdf.js.map"
+    "main.8f0e3548.css.map": "/static/css/main.8f0e3548.css.map",
+    "main.130b8db8.js.map": "/static/js/main.130b8db8.js.map"
   },
   "entrypoints": [
-    "static/css/main.1cb06ac2.css",
-    "static/js/main.8ea3bfdf.js"
+    "static/css/main.8f0e3548.css",
+    "static/js/main.130b8db8.js"
   ]
 }
