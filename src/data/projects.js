@@ -1,3 +1,8 @@
+// GitHub Issues Manager
+import githubIssuesManagerLogo from "../images/issues-manager/issues-logo.jpg"
+import githubIssuesManagerDashboard from "../images/issues-manager/issues-dashboard.jpg"
+import githubIssuesManagerForm from "../images/issues-manager/issues-form.jpg"
+
 // eBay Search
 import ebaySearchHome from "../images/eBay-search/search-form-min.png"
 import ebaySearchResult from "../images/eBay-search/search-result-min.png"
@@ -42,6 +47,23 @@ import spaceInvaderImage from "../images/space-invaders/screenshot_2.png"
 // Music Paradise
 
 export const projects = [
+  {
+    title: "GitHub Issues Manager",
+    type: "Web",
+    createdAt: new Date(2024, 3),
+    logo: githubIssuesManagerLogo,
+    src: [githubIssuesManagerDashboard, githubIssuesManagerForm],
+    description: `A simple issue manager website for your GitHub repositories 
+    The app is created with Next.js, TypeScript and TailwindCSS. Treating issues as blogs, users can create, edit, and close on issues. Users can also view all the issues in a list view, and click on each issue to view the details.`,
+    bulletpoints: [
+      "Server-side rendering with Next.js",
+      "Type-safe with TypeScript",
+      "Responsive design with TailwindCSS",
+      "OAuth 2.0 for GitHub authentication",
+    ],
+    footer: "Learn more by trying the app!",
+    link: "https://issues-manager-zeta.vercel.app/"
+  },
   {
     title: "eBay Search Mobile App",
     type: "Mobile",
@@ -114,6 +136,10 @@ export const projects = [
     footer: "I felt accomplished to have completed this game project from the online course called “Build a Modern Computer from First Principles: From Nand to Tetris” created by Shimon Schocken and Noam Nisan. From the very basics of Gate Logic, I built on the knowledge to learn more complex components, such as ALU, RAM, and finally the CPU. In addition, the course also taught me the process of transforming high-level language into low-level machine code, by letting us build tools such as compilers, virtual machines, and assemblers by ourselves! It was a long journey and I enjoyed it a lot. If you want to be able to build a game like me and also learn what the computer does behind the screen, I highly recommend this course.",
     link: "https://github.com/yingtu35/Dont-Touch-The-Wall"
   },
+]
+
+export const moreProjects = [
+  // TODO: change description of Youtube-Clone"
   {
     title: "Web Calculator",
     type: "Web",
@@ -127,24 +153,20 @@ export const projects = [
     footer: "Have a try at the calculator, I am sure you will be pleased!",
     link: "https://github.com/yingtu35/Web-Calculator"
   },
-]
-
-export const moreProjects = [
-  // TODO: change description of Youtube-Clone"
   {
     title: "Youtube Clone",
     type: "Web",
     createdAt: new Date(2023, 9),
     src: [todoListSignup, todoListMain],
-    description: `Todo List is a web application that uses basic CRUD operations for accessing and storing users' to-do lists. 
-    This app is built on the React.js framework as the frontend and FastAPI as the backend. 
-    The app features a user account system that each user can create and modify their own to-do lists. 
-    OAuth 2.0 is applied so that the risks of securities are minimized.`,
+    description: `Youtube Clone is a user-friendly web application built on Next.js with TypeScript. 
+    It offers seamless integration with Google OAuth for hassle-free sign-ins. 
+    Users can explore an extensive library of uploaded videos and effortlessly upload their own content upon authentication. 
+    Enjoy a streamlined experience with intuitive browsing and straightforward video sharing capabilities.`,
     bulletpoints: [
       "full-stack web development with React and FastAPI",
       "JWT authentication",
     ],
-    footer: "Got something to do? Use TodoList!",
+    footer: "Empower Your Video Journey with Youtube Clone!",
     link: "https://github.com/yingtu35/youtube-clone"
   },
   {

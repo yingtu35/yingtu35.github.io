@@ -1,4 +1,10 @@
-import { SiPython, SiFlask, SiMysql, SiJavascript, SiReact, SiExpress, SiNodedotjs, SiMongodb, SiJest, SiGit, SiGithubactions, SiDocker, SiGraphql, SiHtml5, SiCss3, SiAndroidstudio, SiJava, SiAmazonaws} from "react-icons/si"
+import { SiPython, SiFlask, SiMysql, SiJavascript, 
+        SiReact, SiExpress, SiNodedotjs, SiMongodb, 
+        SiJest, SiGit, SiGithubactions, SiDocker, 
+        SiGraphql, SiHtml5, SiCss3, SiAndroidstudio, 
+        SiJava, SiAmazonaws, SiTypescript, SiC, SiLinux,
+        SiNextdotjs, SiDjango, SiTailwindcss
+} from "react-icons/si"
 
 export const homeTitle = "Hi, I'm Ying Tu";
 export const homeSubtitle = "MSCS Student at USC";
@@ -36,9 +42,25 @@ export const aboutTechnicalSkills = [
     icon: SiJavascript,
   },
   {
+    skill: "TypeScript",
+    icon: SiTypescript,
+  },
+  {
       skill: "Java",
       icon: SiJava,
   },
+  {
+    skill: "C",
+    icon: SiC,
+},
+{
+    skill: "Linux",
+    icon: SiLinux,
+},
+{
+    skill: "Next.js",
+    icon: SiNextdotjs,
+},
   {
       skill: "React",
       icon: SiReact,
@@ -60,6 +82,10 @@ export const aboutTechnicalSkills = [
       icon: SiCss3,
   },
   {
+        skill: "Tailwind CSS",
+        icon: SiTailwindcss,
+  },
+  {
       skill: "Express.js",
       icon: SiExpress,
   },
@@ -70,6 +96,10 @@ export const aboutTechnicalSkills = [
   {
       skill: "Flask",
       icon: SiFlask,
+    },
+    {
+        skill: "Django",
+        icon: SiDjango,
     },
   {
       skill: "MongoDB",

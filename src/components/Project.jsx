@@ -67,14 +67,14 @@ function Project({project}) {
                     onClose={() => {onClose(); setIsHovered(false)}} 
                     motionPreset="slideInBottom"
                     scrollBehavior="inside"
-                    size="3xl"
+                    size="xl"
             >
                 <ModalOverlay bg='blackAlpha.700'
                                 backdropFilter='blur(10px)' />
                 <ModalContent>
                 <ModalHeader bg={modalBg[colorMode]}>
-                    <Heading variant="h1" textAlign="center">{title}</Heading>
-                    <Flex justifyContent="center" alignItems="center" gap="20px">
+                    <Heading variant="h2" textAlign="center">{title}</Heading>
+                    <Flex justifyContent="center" alignItems="center" gap="10px">
                         <Text textAlign="center" fontStyle="italic">{type}</Text>
                         <Text textAlign="center" fontStyle="italic">{formatDateWithMonthAbbreviation(createdAt)}</Text>
                     </Flex>
