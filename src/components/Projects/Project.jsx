@@ -1,12 +1,12 @@
 import React, { useState } from "react"
-import { FaGithub, FaSearchPlus } from "react-icons/fa"
+import { FaGithub, FaSearchPlus, FaYoutube, FaLink } from "react-icons/fa"
 import { MdCheckCircle } from "react-icons/md"
-import { Box, Flex, Image, Text, Button, Modal, ModalOverlay, ModalContent, ModalCloseButton, ModalFooter, ModalBody, ModalHeader, useDisclosure, Heading, useColorMode } from "@chakra-ui/react"
+import { Box, Flex, Image, Text, Button, ButtonGroup, Modal, ModalOverlay, ModalContent, ModalCloseButton, ModalFooter, ModalBody, ModalHeader, useDisclosure, Heading, useColorMode } from "@chakra-ui/react"
 import { List, ListItem, ListIcon } from "@chakra-ui/react";
 import { formatDateWithMonthAbbreviation } from "../../utils/date";
 
 function Project({project}) {
-    const { title, type, logo, src, description, createdAt, bulletpoints, footer, link } = project;
+    const { title, type, logo, src, description, createdAt, bulletpoints, footer, github_link } = project;
     const {isOpen, onOpen, onClose} = useDisclosure();
     const [isHovered, setIsHovered] = useState(false);
 
@@ -80,10 +80,13 @@ function Project({project}) {
                     </Flex>
                 </ModalHeader>
                 <ModalCloseButton />
-                <Flex justifyContent="center" alignItems="stretch" m={3}>
-                  {src.map((img) => (
+                <Flex className="modal-image-container" justifyContent="center" alignItems="stretch">
+                    {src.map((img, index) => (
+                        <img key={index} src={img} alt={title} />
+                    ))}
+                  {/* {src.map((img) => (
                     <Image key={img} src={img} boxSize="50%" m={2} />
-                  ))}
+                  ))} */}
                         {/* <Image src={analysis} boxSize="45%" m={2} />
                         <Image src={loss} boxSize="50%" m={2} /> */}
                 </Flex>
@@ -103,15 +106,37 @@ function Project({project}) {
                 </ModalBody>
 
                 <ModalFooter bg={modalBg[colorMode]} mt={3}>
-                    <Button variant='solid'
-                            leftIcon={<FaGithub />}
-                            colorScheme='green'
-                            m="auto"
-                            as="a"
-                            href={link}
-                            target="_blank"
-                            >More
-                    </Button>
+                    <ButtonGroup spacing={4} m="auto">
+                        {project.video_link && (
+                            <Button variant='solid'
+                                    leftIcon={<FaYoutube />}
+                                    colorScheme="red"
+                                    as="a"
+                                    href={project.video_link}
+                                    target="_blank"
+                                    >Demo
+                            </Button>
+                        )}
+                        {project.website_link && (
+                            <Button variant='solid'
+                                    leftIcon={<FaLink />}
+                                    colorScheme="blue"
+                                    as="a"
+                                    href={project.website_link}
+                                    target="_blank"
+                                    >Website
+                            </Button>
+                        )}
+                        <Button variant='solid'
+                                leftIcon={<FaGithub />}
+                                colorScheme='green'
+                                m="auto"
+                                as="a"
+                                href={github_link}
+                                target="_blank"
+                                >GitHub
+                        </Button>
+                    </ButtonGroup>
                 </ModalFooter>
                 </ModalContent>
             </Modal>

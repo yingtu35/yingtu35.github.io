@@ -1,32 +1,9 @@
-import React, { useEffect, useRef, useState } from "react"
 import { MdArrowBackIosNew, MdArrowForwardIos } from "react-icons/md"
 import { Image, HStack, Flex, Box } from "@chakra-ui/react";
+import useImageSlider from "hooks/useImageSlider";
 
-function ImageSlider({ slides, auto }) {
-    const [currentIdx, setCurrentIdx] = useState(0);
-    const length = slides.length;
-
-    function prevSlide(){
-        setCurrentIdx((currentIdx - 1 + length) % length);
-    };
-
-    function nextSlide(){
-        setCurrentIdx((currentIdx + 1) % length);
-    };
-
-    // automatically change slides
-    var interval = null;
-    const autoSlide = useRef();
-    autoSlide.current = () => {
-        if (auto > 0) {
-            interval = setInterval(nextSlide, auto)
-        }
-    }
-
-    useEffect(() => {
-        autoSlide.current()
-        return () => clearInterval(interval)
-    }, [currentIdx])
+function ImageSlider({ slides, interval }) {
+    const { currentIdx, onIdxChange, onPrevSlide, onNextSlide } = useImageSlider({ length: slides.length, interval });
 
     if (!Array.isArray(slides) || slides.length <= 0) {
         return null;
@@ -36,8 +13,8 @@ function ImageSlider({ slides, auto }) {
     return(
         <Flex className="image-slider-container">
         <Box className="image-slider-box">
-            <MdArrowBackIosNew  className="left-arrow" onClick={prevSlide} />
-            <MdArrowForwardIos className="right-arrow" onClick={nextSlide} />
+            <MdArrowBackIosNew  className="left-arrow" onClick={onPrevSlide} />
+            <MdArrowForwardIos className="right-arrow" onClick={onNextSlide} />
             {slides.map((slide, index) => {
                 return (
                     <div className={index === currentIdx? "slide-active" : "slide"} key={slide.image}>
@@ -54,7 +31,7 @@ function ImageSlider({ slides, auto }) {
             {slides.map((slide, index) => {
                 return (
                     <Box as="button"
-                         onClick={() => setCurrentIdx(index)}
+                         onClick={() => onIdxChange(index)}
                          color="white"
                          bg={index === currentIdx? "white.100" : "white.700"}
                          width={['8px', '16px', '16px', '24px']}

@@ -6,24 +6,6 @@ import Media from "react-media"
 import { aboutContent, aboutTechnicalSkills, aboutTitle } from "../../data/self-introduction"
 import SectionTitle from "../SectionTitle"
 
-
-
-// const contentMobile = [
-//     `I'm Ying Tu, I have a master's degree at National Taiwan University (NTU).
-//     My goal is to become a software engineer and create useful applications for people.`,
-
-//     `I started self-learning computer science since 2022. 
-//     I love computer science because it has brought countless amazing technologies to the world, and still full of potential in the future!`,
-
-//     `I wanted to bring my passion here and value.
-//     That's why I dive into CS!`,
-
-//     `Full-stack development and software engineering are what I am currently focusing on.
-//     Feel free to have a look on my projects in the projects section below.`
-// ]
-
-
-
 function ContentPC() {
     return (
         <Box textAlign="justify" mt={1}>
@@ -52,7 +34,7 @@ function About() {
             
             <Flex className="about-container">
                 <Box m={1}>
-                    <ImageSlider slides={SliderData} auto={3500} />
+                    <ImageSlider slides={SliderData} interval={3500} />
                 </Box>
                 <Box width="550px" m={1}>
                     <Box mb={1}>

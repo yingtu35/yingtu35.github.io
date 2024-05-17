@@ -1,16 +1,5 @@
 import { useEffect, useState } from "react"
-
-var useThrottleCallback = function(fn, t) {
-  let timerId = null;
-  return function(...args) {
-      if (timerId === null) {
-          fn(...args);
-          timerId = setTimeout(() => {
-              timerId = null;
-          }, t);
-      }
-  }
-};
+import { useThrottleCallback } from "utils/functions"
 
 export default function useNavBar() {
   const [hide, setHide] = useState(false);

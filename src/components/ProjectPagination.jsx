@@ -10,6 +10,8 @@ import {
   PaginationContainer,
   PaginationPageGroup,
 } from "@ajna/pagination";
+import { FaGithub } from "react-icons/fa"
+
 
 const innerLimit = 2;
 const outerLimit = 2;
@@ -58,14 +60,15 @@ const ProjectPagination = ({projects}) => {
                   <Td>{project.type}</Td>
                   <Td>{formatDateWithMonthAbbreviation(project.createdAt)}</Td>
                   <Td>
-                    <Button>
-                      <a 
-                        href={project.link} 
-                        target="_blank"
-                        rel="noreferrer">
-                            GitHub
-                      </a>
-                    </Button>
+                  <Button variant='solid'
+                                leftIcon={<FaGithub />}
+                                colorScheme='green'
+                                m="auto"
+                                as="a"
+                                href={project.github_link}
+                                target="_blank"
+                                >GitHub
+                        </Button>
                   </Td>
                 </Tr>
               ))}

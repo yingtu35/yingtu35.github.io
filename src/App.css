@@ -355,9 +355,9 @@
 }
 
 .project-box {
-  width: 30vw;
-  background-color: #718096;
-  border:2px solid #718096;
+  width: 300px;
+  background-color: #1B202B;
+  border:2px solid #1B202B;
   margin: 1vw;
   transition: all 0.3s ease-in-out;
 }
@@ -372,6 +372,16 @@
   font-weight: bold;
   font-size: 1.5rem;
   transition: all 0.3s ease-in-out;
+}
+
+.modal-image-container {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+}
+
+.modal-image-container img {
+  width: 50%;
+  object-fit: contain;
 }
 
 .contact-iconBtn {

@@ -4,9 +4,9 @@ import githubIssuesManagerDashboard from "../images/issues-manager/issues-dashbo
 import githubIssuesManagerForm from "../images/issues-manager/issues-form.jpg"
 
 // eBay Search
-import ebaySearchHome from "../images/eBay-search/search-form-min.png"
-import ebaySearchResult from "../images/eBay-search/search-result-min.png"
-import ebaySearchProduct from "../images/eBay-search/product-detail-min.png"
+import ebaySearchHome from "../images/eBay-search/search-form.png"
+import ebaySearchResult from "../images/eBay-search/search-result.png"
+import ebaySearchProduct from "../images/eBay-search/product-detail.png"
 // BlogApp
 import blogAppLogo from "../images/blog-app/blogAppLogo.png"
 import blogAppLogin from "../images/blog-app/blogAppLogin.png"
@@ -20,7 +20,7 @@ import letsChatLogo from "../images/lets-chat/LetsChatLogo.png"
 import letsChatLobby from "../images/lets-chat/LetsChatLobby-min.png"
 import letsChatRoom from "../images/lets-chat/LetsChatRoom-min.png"
 // Don't touch the wall
-import DontTouchTheWallLogo from "../images/dont-touch-the-wall/game_menu.PNG"
+import DontTouchTheWallLogo from "../images/dont-touch-the-wall/game_menu.png"
 import level_1 from "../images/dont-touch-the-wall/level_1.png"
 import level_2 from "../images/dont-touch-the-wall/level_2.png"
 // Web Calculator
@@ -62,7 +62,9 @@ export const projects = [
       "OAuth 2.0 for GitHub authentication",
     ],
     footer: "Learn more by trying the app!",
-    link: "https://issues-manager-zeta.vercel.app/"
+    video_link: "https://youtu.be/uHcBTmiAhqQ?si=t-_-JboTjUfv0Rf9",
+    website_link: "https://issues-manager-zeta.vercel.app/",
+    github_link: "https://github.com/yingtu35/IssuesManager"
   },
   {
     title: "eBay Search Mobile App",
@@ -77,7 +79,8 @@ export const projects = [
       "REST API for handling request",
     ],
     footer: "Credits to Chi-Ting Hou for helping me with the project.",
-    link: "https://github.com/yingtu35/eBay_Search_app"
+    video_link: "https://youtu.be/5e3OU2CHzfU?si=x9wEukFEfpBbkw-8",
+    github_link: "https://github.com/yingtu35/eBay_Search_app"
   },
   {
     title: "Blog App",
@@ -92,7 +95,8 @@ export const projects = [
       "Automated testing and linting with GitHub Actions to ensure software quality and shorten overall time by 50%"
     ],
     footer: "Learn more in the git repository!",
-    link: "https://github.com/yingtu35/blogApp"
+    video_link: "https://youtu.be/sCE-lH05nV4?si=R0PiyLpHd8eGejC1",
+    github_link: "https://github.com/yingtu35/blogApp"
   },
   {
     title: "Rate Repository",
@@ -102,11 +106,11 @@ export const projects = [
     createdAt: new Date(2023, 6),
     description: "Rate Repository is a mobile application to search, view, rate, comment GitHub repositories (currently offline) with a single touch.",
     bulletpoints: [
-      "Designed a front-end view using React Native and Apollo Client to search, rate, comment, and link to mock GitHub repositories",
+      "Designed a front-end view using React Native and Apollo Client to search, rate, comment, and github_link to mock GitHub repositories",
       "Utilized caching for data retrieval to lower 20% network requests, debouncing to reduce page re-render on repository searching, and pagination for a responsive interface",
     ],
     footer: "Try it and you'll like it!",
-    link: "https://github.com/yingtu35/Rate-Repository-App"
+    github_link: "https://github.com/yingtu35/Rate-Repository-App"
   },
   {
     title: "Let's Chat",
@@ -120,7 +124,8 @@ export const projects = [
       "Leveraged Google SSO feature for fast authentication, decreasing sign-up and login time by 80%",
     ],
     footer: "Let's chat together!",
-    link: "https://github.com/yingtu35/Lets-Chat"
+    video_link: "https://youtu.be/sxBVm1fmXMI?si=v3Dvxw-o0YBEr_Eb",
+    github_link: "https://github.com/yingtu35/Lets-Chat"
   },
   {
     title: "Don't Touch the Wall",
@@ -134,7 +139,8 @@ export const projects = [
       "Transformed high-level language into low-level machine code with self-made compiler and VM translator",
     ],
     footer: "I felt accomplished to have completed this game project from the online course called “Build a Modern Computer from First Principles: From Nand to Tetris” created by Shimon Schocken and Noam Nisan. From the very basics of Gate Logic, I built on the knowledge to learn more complex components, such as ALU, RAM, and finally the CPU. In addition, the course also taught me the process of transforming high-level language into low-level machine code, by letting us build tools such as compilers, virtual machines, and assemblers by ourselves! It was a long journey and I enjoyed it a lot. If you want to be able to build a game like me and also learn what the computer does behind the screen, I highly recommend this course.",
-    link: "https://github.com/yingtu35/Dont-Touch-The-Wall"
+    video_link: "https://youtu.be/7gZU4R8eAPM",
+    github_link: "https://github.com/yingtu35/Dont-Touch-The-Wall"
   },
 ]
 
@@ -151,7 +157,7 @@ export const moreProjects = [
       "Designed a full-fledged calculator with HTML, CSS for displaying pages, and JavaScript for complex logic",
     ],
     footer: "Have a try at the calculator, I am sure you will be pleased!",
-    link: "https://github.com/yingtu35/Web-Calculator"
+    github_link: "https://github.com/yingtu35/Web-Calculator"
   },
   {
     title: "Youtube Clone",
@@ -167,7 +173,7 @@ export const moreProjects = [
       "JWT authentication",
     ],
     footer: "Empower Your Video Journey with Youtube Clone!",
-    link: "https://github.com/yingtu35/youtube-clone"
+    github_link: "https://github.com/yingtu35/youtube-clone"
   },
   {
     title: "TodoList",
@@ -183,7 +189,7 @@ export const moreProjects = [
       "JWT authentication",
     ],
     footer: "Got something to do? Use TodoList!",
-    link: "https://github.com/yingtu35/Todo-List"
+    github_link: "https://github.com/yingtu35/Todo-List"
   },
   {
     title: "JustPostIt",
@@ -201,7 +207,7 @@ export const moreProjects = [
     footer: `This is the first app that I created all by myself as a side project to practice my full-stack web development skills, 
     as well as hone my programming skills in both JavaScript and Python. 
     The design of the page is far from perfect but at least it is working!`,
-    link: "https://github.com/yingtu35/Just-Post-It"
+    github_link: "https://github.com/yingtu35/Just-Post-It"
   },
   {
     title: "Housing Prediction",
@@ -216,7 +222,7 @@ export const moreProjects = [
       "Model hyperparameters tuning"
     ],
     footer: "I also get a good amount of practice in multiple Python third-party libraries such as Numpy, Pandas, Matplotlib.",
-    link: "https://github.com/yingtu35/House-Prices-Prediction-AI"
+    github_link: "https://github.com/yingtu35/House-Prices-Prediction-AI"
   },
   {
     title: "Music Paradise",
@@ -230,8 +236,8 @@ export const moreProjects = [
       "Developed a full-stack web music controller with React and Django for users to collaboratively view or choose music being played",
       "Integrated Spotify Web API into backend system for user authentication, authorization, and music control",
     ],
-    footer: "Learn more about Music Paradise in the link below",
-    link: "https://github.com/yingtu35/Space-Invaders"
+    footer: "Learn more about Music Paradise in the github_link below",
+    github_link: "https://github.com/yingtu35/Space-Invaders"
   },
   {
     title: "Space Invaders",
@@ -248,7 +254,7 @@ export const moreProjects = [
       "Domain analysis for game creation",
     ],
     footer: `Hope you enjoy the game. Feel free to check my source code below.`,
-    link: "https://github.com/yingtu35/Space-Invaders"
+    github_link: "https://github.com/yingtu35/Space-Invaders"
   },
   {
     title: "Christmas Attractions Map",
@@ -262,6 +268,7 @@ export const moreProjects = [
       "Assigned tasks and orchestrated collaboration by verifying data coherence; Completed project one week ahead of schedule",
     ],
     footer: "Let's find out where to go on Christmas!",
-    link: "https://github.com/yingtu35/Christmas-Attractions-Map"
+    video_link: "https://youtu.be/CROOrsN7P50?si=dKhvO6HlqIB9i86G",
+    github_link: "https://github.com/yingtu35/Christmas-Attractions-Map"
   },
 ]
