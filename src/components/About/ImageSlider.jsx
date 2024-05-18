@@ -31,6 +31,7 @@ function ImageSlider({ slides, interval }) {
             {slides.map((slide, index) => {
                 return (
                     <Box as="button"
+                         aria-label={`slide-${index}`}
                          onClick={() => onIdxChange(index)}
                          color="white"
                          bg={index === currentIdx? "white.100" : "white.700"}

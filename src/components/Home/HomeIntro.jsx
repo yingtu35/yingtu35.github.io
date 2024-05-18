@@ -1,6 +1,6 @@
 import React from "react"
 import { Fragment } from "react"
-import { Text, Box, List, ListItem, ListIcon, ButtonGroup, Button } from "@chakra-ui/react"
+import { Flex, Text, Box, List, ListItem, ListIcon, ButtonGroup, Button } from "@chakra-ui/react"
 import { SlDiamond } from "react-icons/sl"
 import { FiLinkedin, FiGithub } from "react-icons/fi"
 import Media from "react-media";
@@ -20,9 +20,6 @@ function HomeIntroPC() {
                 return (<span className="subtitle span cursive color-lam" key={index}>{word}</span>);
             })}
             <br />
-            {/* {tags.map((word, index) => {
-                return (<span className="tags span cursive color-lam" key={index}>{word}</span>);
-            })} */}
             <Box mt={4}>
                 <Text className="content">{selfIntro}
                     <br /><br />
@@ -37,14 +34,6 @@ function HomeIntroPC() {
                                     <span className="content color-lam">{skill}</span>
                                 </ListItem>);
                     })}
-                    {/* // <ListItem>
-                    //     <ListIcon as={SlDiamond} color="#20a785" />
-                    //     <span className="content color-lam">Full-stack Development</span>
-                    // </ListItem>
-                    // <ListItem>
-                    //     <ListIcon as={SlDiamond} color="#20a785" />
-                    //     <span className="content color-lam">Software Engineering</span>
-                    // </ListItem> */}
                 </List>                     
             </Box>
             <Box mt={10} className="content">
@@ -54,6 +43,7 @@ function HomeIntroPC() {
             <ButtonGroup>
                 <Button variant="ghost"
                         as="a"
+                        aria-label="GitHub"
                         size="lg"
                         borderRadius="full"
                         href="https://github.com/yingtu35">
@@ -62,6 +52,7 @@ function HomeIntroPC() {
                 <Button variant="ghost"
                         colorScheme="linkedin"
                         as="a"
+                        aria-label="LinkedIn"
                         size="lg"
                         borderRadius="full"
                         href="https://www.linkedin.com/in/ying-tu-06b208102/">
@@ -77,41 +68,34 @@ function HomeIntroMobile() {
     const title = homeMobileTitle.split("");
     const subtitle = homeSubtitle.split("");
     return(
-        <Box width="800px" m={1} textAlign="center">
+        <Flex direction="column" width="800px" m={1} textAlign="center" align="center" gap={4}>
+            <Box>
             {title.map((word, index) => {
                 return (<span className="title span cursive color-lam" key={index}>{word}</span>);
             })}
-            <br/>
+            </Box>
+            <Box>
             {subtitle.map((word, index) => {
-                return (<span className="subtitle span cursive color-lam" key={index}>{word}</span>);
+                return (<span className="subtitle-mobile span cursive color-lam" key={index}>{word}</span>);
             })}
-            {/* <br />
-            {subtitle.map((word, index) => {
-                return (<span className="subtitle span cursive color-lam" key={index}>{word}</span>);
-            })} */}
-            <Box height="100px"></Box>
-            <Text className="tags">Interested in:</Text>
-            {skills.map((skill, index) => {
-                return (<Fragment key={skill}>
-                        <span className="tags span cursive color-lam">{"◆" + skill}</span><br />
-                    </Fragment>);
-            })}
-            {/* {tag1.map((word, index) => {
-                return (<span className="tags span cursive color-lam" key={index}>{word}</span>);
-            })}
-            <br />
-            {tag2.map((word, index) => {
-                return (<span className="tags span cursive color-lam" key={index}>{word}</span>);
-            })}
-            <br/> */}
-            <br/>
-            <Button variant="solid" as="a" 
-                    size='lg'
-                    href={resume} 
+            </Box>
+            <Box>
+                <Text className="tags">Interested in:</Text>
+                {skills.map((skill, index) => {
+                    return (<Fragment key={skill}>
+                            <span className="tags span cursive color-lam">{"◆" + skill}</span><br />
+                        </Fragment>);
+                })}
+            </Box>
+            <Button variant="solid" 
+                    width="300px"
+                    as="a" 
+                    href={resume}
+                    aria-label="Resume-mobile"
                     target="_blank">
                 Check out my resume
             </Button>
-        </Box>
+        </Flex>
     );
 };
 

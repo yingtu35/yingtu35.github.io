@@ -16,13 +16,19 @@ function Project({project}) {
     return(
         <Box className="project-box"
              as="button"
+             aria-label={title}
              onClick={onOpen}
              onMouseEnter={() => setIsHovered(true)}
              onMouseLeave={() => setIsHovered(false)}
              position="relative"
              _hover={{bg: 'rgba(0, 0, 0, 0.5)'}}
         >
-            <Image src={logo} opacity={isHovered? 0.3:1} transition="all 0.3s ease-in-out" loading="lazy" />
+            <Image  src={logo} 
+                    alt={title}
+                    opacity={isHovered? 0.3:1} 
+                    transition="all 0.3s ease-in-out" 
+                    loading="lazy" 
+            />
             {isHovered ? (
                 <>
                 <Box

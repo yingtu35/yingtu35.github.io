@@ -1,10 +1,11 @@
-import React from "react"
-import Project from "./Project";
+import React, { lazy } from "react"
 import { projects } from "../../data/projects";
 import { Flex, Box, Button } from "@chakra-ui/react"
 import { FaFolderOpen } from "react-icons/fa"
 import { useNavigate } from "react-router-dom"
 import SectionTitle from "../SectionTitle";
+
+const Project = lazy(() => import("./Project"));
 
 function Projects() {
     const navigate = useNavigate();

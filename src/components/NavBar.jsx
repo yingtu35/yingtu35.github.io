@@ -26,10 +26,10 @@ function NavBarMobile({ colorMode, toggleColorMode }) {
                     variant="ghost" />
                 <MenuList width="80vw">
                     {/* <MenuItem className="menu-item" as="a" href="#">Home</MenuItem> */}
-                    <MenuItem className="menu-item" as="a" href="#about-section">About</MenuItem>
-                    <MenuItem className="menu-item" as="a" href="#experiences-section">Experiences</MenuItem>
-                    <MenuItem className="menu-item" as="a" href="#projects-section">Projects</MenuItem>
-                    <MenuItem className="menu-item" as="a" href="#contact-section">Contact</MenuItem>
+                    <MenuItem className="menu-item" as="a" href="#about">About</MenuItem>
+                    <MenuItem className="menu-item" as="a" href="#experiences">Experiences</MenuItem>
+                    <MenuItem className="menu-item" as="a" href="#projects">Projects</MenuItem>
+                    <MenuItem className="menu-item" as="a" href="#contact">Contact</MenuItem>
                 </MenuList>
             </Menu>
         </ButtonGroup>
@@ -40,19 +40,25 @@ function NavBarPC({ colorMode, toggleColorMode }) {
     return (
         <ButtonGroup>
             {colorMode === "dark" ?
-                <button className="navBtn navBtn1" onClick={toggleColorMode}>
+                <button className="navBtn navBtn1" 
+                        onClick={toggleColorMode}
+                        aria-label="darkmode-btn"
+                >
                     <MdLightMode />
                 </button> 
                 :
-                <button className="navBtn navBtn1" onClick={toggleColorMode}>
+                <button className="navBtn navBtn1" 
+                        onClick={toggleColorMode}
+                        aria-label="lightmode-btn"
+                >
                     <MdNightlight />
                 </button> 
             }
             {/* <a className="navBtn navBtn1" href="#">Home</a> */}
-            <a className="navBtn navBtn1" href="#about-section">About</a>
-            <a className="navBtn navBtn1" href="#experiences-section">Experiences</a>
-            <a className="navBtn navBtn1" href="#projects-section">Projects</a>
-            <a className="navBtn navBtn1" href="#contact-section">Contact</a>
+            <a className="navBtn navBtn1" href="#about">About</a>
+            <a className="navBtn navBtn1" href="#experiences">Experiences</a>
+            <a className="navBtn navBtn1" href="#projects">Projects</a>
+            <a className="navBtn navBtn1" href="#contact">Contact</a>
             <a className="navBtn navBtn2"
                     href={resume} 
                     target="_blank"

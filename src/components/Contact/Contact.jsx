@@ -1,5 +1,4 @@
 import React from "react"
-import selfPortrait from "../../images/Self-portrait.png"
 import ContactButtons from "./ContactButtons";
 import { Flex, Box, Image } from "@chakra-ui/react"
 import SectionTitle from "../SectionTitle";

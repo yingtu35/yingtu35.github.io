@@ -1,28 +1,28 @@
 // GitHub Issues Manager
-import githubIssuesManagerLogo from "../images/issues-manager/issues-logo.jpg"
-import githubIssuesManagerDashboard from "../images/issues-manager/issues-dashboard.jpg"
-import githubIssuesManagerForm from "../images/issues-manager/issues-form.jpg"
+import githubIssuesManagerLogo from "../images/issues-manager/issues-logo.webp"
+import githubIssuesManagerDashboard from "../images/issues-manager/issues-dashboard.webp"
+import githubIssuesManagerForm from "../images/issues-manager/issues-form.webp"
 
 // eBay Search
-import ebaySearchHome from "../images/eBay-search/search-form.png"
-import ebaySearchResult from "../images/eBay-search/search-result.png"
-import ebaySearchProduct from "../images/eBay-search/product-detail.png"
+import ebaySearchHome from "../images/eBay-search/search-form.webp"
+import ebaySearchResult from "../images/eBay-search/search-result.webp"
+import ebaySearchProduct from "../images/eBay-search/product-detail.webp"
 // BlogApp
-import blogAppLogo from "../images/blog-app/blogAppLogo.png"
-import blogAppLogin from "../images/blog-app/blogAppLogin.png"
-import blogAppBlogs from "../images/blog-app/blogAppBlogs.png"
+import blogAppLogo from "../images/blog-app/blogAppLogo.webp"
+import blogAppLogin from "../images/blog-app/blogAppLogin.webp"
+import blogAppBlogs from "../images/blog-app/blogAppBlogs.webp"
 // Rate Repository
-import rateRepositoryLogo from "../images/rate-repository/rateRepoLogo-min.png"
-import rateRepositoryHome from "../images/rate-repository/rateRepoHome-min.png"
-import rateRepositoryRepo from "../images/rate-repository/rateRepoRepo-min.png"
+import rateRepositoryLogo from "../images/rate-repository/rateRepoLogo.webp"
+import rateRepositoryHome from "../images/rate-repository/rateRepoHome.webp"
+import rateRepositoryRepo from "../images/rate-repository/rateRepoRepo.webp"
 // Lets Chat
-import letsChatLogo from "../images/lets-chat/LetsChatLogo.png"
-import letsChatLobby from "../images/lets-chat/LetsChatLobby-min.png"
-import letsChatRoom from "../images/lets-chat/LetsChatRoom-min.png"
+import letsChatLogo from "../images/lets-chat/LetsChatLogo.webp"
+import letsChatLobby from "../images/lets-chat/LetsChatLobby.webp"
+import letsChatRoom from "../images/lets-chat/LetsChatRoom.webp"
 // Don't touch the wall
-import DontTouchTheWallLogo from "../images/dont-touch-the-wall/game_menu.png"
-import level_1 from "../images/dont-touch-the-wall/level_1.png"
-import level_2 from "../images/dont-touch-the-wall/level_2.png"
+import DontTouchTheWallLogo from "../images/dont-touch-the-wall/game_menu.webp"
+import level_1 from "../images/dont-touch-the-wall/level_1.webp"
+import level_2 from "../images/dont-touch-the-wall/level_2.webp"
 // Web Calculator
 import webCalculatorImage from "../images/web-calculator/web-calculator.png"
 import calculatorImage from "../images/web-calculator/screenshot.png"

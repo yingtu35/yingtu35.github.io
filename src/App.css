@@ -117,6 +117,10 @@
   font-size: 2vw;
 }
 
+.subtitle-mobile {
+  font-size: 16px;
+}
+
 .jobTitle {
   font-style: italic;
 }
@@ -235,6 +239,7 @@
 }
 
 .image-slider-box{
+  
   position: relative;
   display: flex;
   justify-content: center;
@@ -242,6 +247,8 @@
 }
 
 .image{
+  width: 400px;
+  aspect-ratio: 3 / 4;
   border-radius: 5%;
   margin: auto;
 }
@@ -310,7 +317,7 @@
 
 .experience-container {
   justify-content: space-around;
-  align-items: center;
+  align-items: start;
   flex-direction: row;
   flex-wrap: wrap;
   margin: 5% 0;
@@ -322,7 +329,8 @@
 }
 
 .experience-image-container {
-  min-width: 300px;
+  width: 300px;
+  aspect-ratio: 3 / 2;
 }
 
 .experience-image-container img {
@@ -365,6 +373,11 @@
 .project-box:hover {
   transform: translateY(-5%);
   transition: all 0.3s ease-in-out;
+}
+
+.project-box img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
 }
 
 .project-title {
@@ -446,13 +459,13 @@
     visibility: hidden;
   }
 
-  .project-box{
-    width: 300px;
-  }
-
   .portrait-box:hover {
     transform: scale(1.05);
     transition: all 0.3s ease-in-out;
+  }
+
+  .image {
+    width: 300px;
   }
 
   .skill-list {
