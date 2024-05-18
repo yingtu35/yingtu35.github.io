@@ -345,6 +345,7 @@
 }
 
 .projects-table-container {
+  min-height: 460px;
   margin: 0px;
   justify-content: center;
 }

@@ -9,3 +9,15 @@ export function useThrottleCallback(fn, t) {
       }
   }
 };
+
+export function debounce(fn, t) {
+  let timeoutId = null;
+  return function(...args) {
+      if (timeoutId) {
+          clearTimeout(timeoutId);
+      }
+      timeoutId = setTimeout(() => {
+          fn(...args)
+      }, t);
+  }
+};

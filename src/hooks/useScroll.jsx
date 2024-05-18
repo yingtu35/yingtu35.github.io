@@ -1,23 +1,12 @@
 import { useState, useEffect } from 'react';
-
-var useDebounceCallback = function(fn, t) {
-  let timeoutId = null;
-  return function(...args) {
-      if (timeoutId) {
-          clearTimeout(timeoutId);
-      }
-      timeoutId = setTimeout(() => {
-          fn(...args)
-      }, t);
-  }
-};
+import { debounce } from 'utils/functions';
 
 export default function useScroll() {
   const viewHeight = window.innerHeight;
   const [scrollPosition, setScrollPosition] = useState(window.scrollY);
   const showBackToTop = scrollPosition > viewHeight;
 
-  const handleScroll = useDebounceCallback(() => {
+  const handleScroll = debounce(() => {
     setScrollPosition(window.scrollY);
   }, 300);
 

@@ -3,7 +3,7 @@ import Select from "react-select";
 import { Input, InputGroup, InputLeftElement } from "@chakra-ui/react";
 import { Box, Flex } from "@chakra-ui/react"
 import { SearchIcon } from "@chakra-ui/icons";
-import debounce from 'lodash.debounce';
+import { debounce } from "utils/functions";
 import { projects, moreProjects } from "../data/projects.js"
 import ProjectPagination from "./ProjectPagination.jsx";
 

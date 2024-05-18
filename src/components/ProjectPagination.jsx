@@ -73,14 +73,6 @@ const ProjectPagination = ({projects}) => {
                 </Tr>
               ))}
             </Tbody>
-            {/* <Tfoot>
-              <Tr>
-                <Th>Project</Th>
-                <Th>Type</Th>
-                <Th>Created at</Th>
-                <Th>Link</Th>
-              </Tr>
-            </Tfoot> */}
           </Table>
         </TableContainer>
       </Flex>
