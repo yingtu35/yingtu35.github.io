@@ -6,7 +6,7 @@ import { experiences } from "data/experiences";
 export default function Experiences() {
   const sectionTitle = "Experiences".split("");
   return (
-    <Box id="experiences-section" className="section-container">
+    <Box id="experiences" className="section-container">
       <SectionTitle title={sectionTitle} />
       <Flex className="experiences-container">
         {experiences.map((experience) => (

@@ -8,7 +8,7 @@ function Contacts() {
     const getInTouch = "Get in Touch?".split("");
 
     return (
-        <Box id="contact-section" className="section-container" textAlign="center">
+        <Box id="contact" className="section-container" textAlign="center">
             <SectionTitle title={sectionTitle} />
             {getInTouch.map((word, index) => {
                     return (<span className="tags span cursive color-lam" key={index}>{word}</span>);

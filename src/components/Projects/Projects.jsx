@@ -11,7 +11,7 @@ function Projects() {
     const navigate = useNavigate();
     const sectionTitle = "Projects".split("");
     return (
-        <Box id="projects-section" className="section-container">
+        <Box id="projects" className="section-container">
             <SectionTitle title={sectionTitle} />
             <Flex className="projects-container">
                 {projects.map((project, index) => (

@@ -24,27 +24,32 @@ import DontTouchTheWallLogo from "../images/dont-touch-the-wall/game_menu.webp"
 import level_1 from "../images/dont-touch-the-wall/level_1.webp"
 import level_2 from "../images/dont-touch-the-wall/level_2.webp"
 // Web Calculator
-import webCalculatorImage from "../images/web-calculator/web-calculator.png"
-import calculatorImage from "../images/web-calculator/screenshot.png"
+import webCalculatorImage from "../images/web-calculator/web-calculator.webp"
+import calculatorImage from "../images/web-calculator/calculator.webp"
 
 // Christmas Attractions Map
-import christmasMapLogo from "../images/christmas-map/ChristmasLogo.png"
-import christmasMap1 from "../images/christmas-map/ChristmasMap1-min.png"
-import christmasMap2 from "../images/christmas-map/ChristmasMap2-min.png"
+import christmasMapLogo from "../images/christmas-map/ChristmasLogo.webp"
+import christmasMap1 from "../images/christmas-map/ChristmasMap1.webp"
+import christmasMap2 from "../images/christmas-map/ChristmasMap2.webp"
 // House Prediction
-import analysis from "../images/house-price-predictions/analysis.png"
-import loss from "../images/house-price-predictions/loss.png"
+import housing from "../images/house-price-predictions/housing.webp"
+import analysis from "../images/house-price-predictions/analysis.webp"
+import loss from "../images/house-price-predictions/loss.webp"
 // TodoList
-import todoListMain from "../images/todo-list/todo-list-main.png"
-import todoListSignup from "../images/todo-list/todo-list-signup.png"
-// JustPostIt
-import justPostItLogo from "../images/just-post-it/just-post-it.PNG"
-import justPostItInput from "../images/just-post-it/just-post-it-input.PNG"
+import todoList from "../images/todo-list/todo-list.webp"
+import todoListMain from "../images/todo-list/todo-list-main.webp"
+import todoListSignup from "../images/todo-list/todo-list-signup.webp"
+// // JustPostIt
+// import justPostItLogo from "../images/just-post-it/just-post-it.webp"
+// import justPostItInput from "../images/just-post-it/just-post-it-input.webp"
 // Space Invaders
-import gameplay from "../images/space-invaders/screenshot_1.png"
-import gameover from "../images/space-invaders/gameover.PNG"
-import spaceInvaderImage from "../images/space-invaders/screenshot_2.png"
+import gameplay from "../images/space-invaders/space-invader-1.webp"
+import gameover from "../images/space-invaders/gameover.webp"
+import spaceInvaderImage from "../images/space-invaders/space-invader-2.webp"
 // Music Paradise
+import musicParadise from "../images/music-paradise/music-paradise.webp"
+import createRoom from "../images/music-paradise/create-room.webp"
+import musicController from "../images/music-paradise/music-controller.webp"
 
 export const projects = [
   {
@@ -157,27 +162,30 @@ export const moreProjects = [
       "Designed a full-fledged calculator with HTML, CSS for displaying pages, and JavaScript for complex logic",
     ],
     footer: "Have a try at the calculator, I am sure you will be pleased!",
+    website_link: "https://yingtu35.github.io/Web-Calculator/",
     github_link: "https://github.com/yingtu35/Web-Calculator"
   },
-  {
-    title: "Youtube Clone",
-    type: "Web",
-    createdAt: new Date(2023, 9),
-    src: [todoListSignup, todoListMain],
-    description: `Youtube Clone is a user-friendly web application built on Next.js with TypeScript. 
-    It offers seamless integration with Google OAuth for hassle-free sign-ins. 
-    Users can explore an extensive library of uploaded videos and effortlessly upload their own content upon authentication. 
-    Enjoy a streamlined experience with intuitive browsing and straightforward video sharing capabilities.`,
-    bulletpoints: [
-      "full-stack web development with React and FastAPI",
-      "JWT authentication",
-    ],
-    footer: "Empower Your Video Journey with Youtube Clone!",
-    github_link: "https://github.com/yingtu35/youtube-clone"
-  },
+  // {
+  //   title: "Youtube Clone",
+  //   type: "Web",
+  //   logo: todoList,
+  //   createdAt: new Date(2023, 9),
+  //   src: [todoListSignup, todoListMain],
+  //   description: `Youtube Clone is a user-friendly web application built on Next.js with TypeScript. 
+  //   It offers seamless integration with Google OAuth for hassle-free sign-ins. 
+  //   Users can explore an extensive library of uploaded videos and effortlessly upload their own content upon authentication. 
+  //   Enjoy a streamlined experience with intuitive browsing and straightforward video sharing capabilities.`,
+  //   bulletpoints: [
+  //     "A full-stack serverless and scalable application built on Google Cloud Platform",
+  //     "Deployed Video processing services that reduce video sizes by 90%",
+  //   ],
+  //   footer: "Start Your Content Creation Journey with Youtube Clone!",
+  //   github_link: "https://github.com/yingtu35/youtube-clone"
+  // },
   {
     title: "TodoList",
     type: "Web",
+    logo: todoList,
     createdAt: new Date(2022, 12),
     src: [todoListSignup, todoListMain],
     description: `Todo List is a web application that uses basic CRUD operations for accessing and storing users' to-do lists. 
@@ -191,27 +199,28 @@ export const moreProjects = [
     footer: "Got something to do? Use TodoList!",
     github_link: "https://github.com/yingtu35/Todo-List"
   },
-  {
-    title: "JustPostIt",
-    type: "Web",
-    createdAt: new Date(2022, 12),
-    logo: justPostItLogo,
-    src: [justPostItInput],
-    description: `Just Post It is a web application that helps you remember tasks, schedules, homework assignments, meeting appointments, etc 
-    by putting yellowish cards on your browser. It is built on the React.js framework as the frontend and Django as the backend. 
-    The app uses Django to provide a REST API for the frontend application, and it uses lightweight SQLite3 databases to store user data.`,
-    bulletpoints: [
-      "full-stack web development with React and Django",
-      "rest api for handling request",
-    ],
-    footer: `This is the first app that I created all by myself as a side project to practice my full-stack web development skills, 
-    as well as hone my programming skills in both JavaScript and Python. 
-    The design of the page is far from perfect but at least it is working!`,
-    github_link: "https://github.com/yingtu35/Just-Post-It"
-  },
+  // {
+  //   title: "JustPostIt",
+  //   type: "Web",
+  //   createdAt: new Date(2022, 12),
+  //   logo: justPostItLogo,
+  //   src: [justPostItInput],
+  //   description: `Just Post It is a web application that helps you remember tasks, schedules, homework assignments, meeting appointments, etc 
+  //   by putting yellowish cards on your browser. It is built on the React.js framework as the frontend and Django as the backend. 
+  //   The app uses Django to provide a REST API for the frontend application, and it uses lightweight SQLite3 databases to store user data.`,
+  //   bulletpoints: [
+  //     "full-stack web development with React and Django",
+  //     "rest api for handling request",
+  //   ],
+  //   footer: `This is the first app that I created all by myself as a side project to practice my full-stack web development skills, 
+  //   as well as hone my programming skills in both JavaScript and Python. 
+  //   The design of the page is far from perfect but at least it is working!`,
+  //   github_link: "https://github.com/yingtu35/Just-Post-It"
+  // },
   {
     title: "Housing Prediction",
     type: "ML",
+    logo: housing,
     createdAt: new Date(2022, 10),
     src: [analysis, loss],
     description: "This is a self-motivated project to predict the house prices from 1,500 houses with each having 72 features. In the project, I significantly enhanced my skills in:",
@@ -227,8 +236,9 @@ export const moreProjects = [
   {
     title: "Music Paradise",
     type: "Web",
+    logo: musicParadise,
     createdAt: new Date(2022, 11),
-    src: [],
+    src: [createRoom, musicController],
     description: `Music Paradise is a collaborative music controlling web application
     You can be a host, create a room, and invite your friends to join by sharing the room code.
     When creating the room, you can specify whether you allow your guests to control the music.`,

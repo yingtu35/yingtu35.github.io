@@ -1,6 +1,6 @@
 import './App.css';
 import { Routes, Route, Navigate } from "react-router-dom"
-import AllProjects from "./components/AllProjects"
+import AllProjects from "./components/Projects/AllProjects"
 import Home from "./components/Home/Home"
 import About from "./components/About/About"
 import Projects from "./components/Projects/Projects"

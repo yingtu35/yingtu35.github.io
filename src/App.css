@@ -336,12 +336,12 @@
 .experience-image-container img {
   margin: auto;
 }
-.projects-table-action-bar {
+.projects-table-action-bar {  
   justify-content: start;
   align-items: center;
   flex-direction: row;
   flex-wrap: wrap;
-  margin: 5px 0 5px 0;
+  margin: 0 0 20px 0;
 }
 
 .projects-table-container {
@@ -364,10 +364,11 @@
 }
 
 .project-box {
-  width: 300px;
+  width: 33%;
+  min-width: 300px;
   background-color: #1B202B;
   border:2px solid #1B202B;
-  margin: 1vw;
+  padding: 0 1vw 1vw 1vw;
   transition: all 0.3s ease-in-out;
 }
 

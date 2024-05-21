@@ -1,6 +1,6 @@
 import React, { Fragment } from "react";
 import { Flex, TableContainer, Table, Thead, Tbody, Tr, Th, Td, Button } from "@chakra-ui/react"
-import { formatDateWithMonthAbbreviation } from "../utils/date.js";
+import { formatDateWithMonthAbbreviation } from "../../utils/date.js";
 import {
   Pagination,
   usePagination,

@@ -29,7 +29,7 @@ function ContentMobile() {
 function About() {
     const sectionTitle = "About".split("");
     return (
-        <Box id="about-section" className="section-container">
+        <Box id="about" className="section-container">
             <SectionTitle title={sectionTitle} />
             
             <Flex className="about-container">
