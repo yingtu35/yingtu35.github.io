@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.55c9a89e.css",
-    "main.js": "/static/js/main.841a0a65.js",
+    "main.css": "/static/css/main.5e06cffe.css",
+    "main.js": "/static/js/main.d90c7163.js",
     "static/media/Resume_Ying_Tu.pdf": "/static/media/Resume_Ying_Tu.acf0d68bf859e6dc751e.pdf",
     "static/media/image_3.webp": "/static/media/image_3.5e953197eeed3e7c9d35.webp",
     "static/media/housing.webp": "/static/media/housing.8e6fbb645a7523807841.webp",
@@ -44,11 +44,11 @@
     "static/media/space-invader-1.webp": "/static/media/space-invader-1.781b7483771a3f1f11d5.webp",
     "static/media/blogAppLogin.webp": "/static/media/blogAppLogin.3fad46d71be76e198eab.webp",
     "index.html": "/index.html",
-    "main.55c9a89e.css.map": "/static/css/main.55c9a89e.css.map",
-    "main.841a0a65.js.map": "/static/js/main.841a0a65.js.map"
+    "main.5e06cffe.css.map": "/static/css/main.5e06cffe.css.map",
+    "main.d90c7163.js.map": "/static/js/main.d90c7163.js.map"
   },
   "entrypoints": [
-    "static/css/main.55c9a89e.css",
-    "static/js/main.841a0a65.js"
+    "static/css/main.5e06cffe.css",
+    "static/js/main.d90c7163.js"
   ]
 }
