@@ -1,4 +1,4 @@
-import { Flex, Box } from "@chakra-ui/react"
+import { Box } from "@chakra-ui/react"
 import SectionTitle from "../SectionTitle";
 import Experience from "./Experience";
 import { experiences } from "data/experiences";
@@ -8,12 +8,12 @@ export default function Experiences() {
   return (
     <Box id="experiences" className="section-container">
       <SectionTitle title={sectionTitle} />
-      <Flex className="experiences-container">
+      <Box>
         {experiences.map((experience) => (
           <Experience key={experience.id} experience={experience} />
         ))
         }
-      </Flex>
+      </Box>
     </Box>
   )
 }

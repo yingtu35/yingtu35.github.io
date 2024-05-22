@@ -6,7 +6,7 @@ function Footer() {
     return (
         <Box textAlign="center" mb={5}>
             <Text className="color-lam" fontWeight="bold">Designed by Ying Tu. {curTime.getFullYear()}<br />
-                    Version: 1.5.1
+                    Version: 1.5.2
             </Text>
         </Box>
         

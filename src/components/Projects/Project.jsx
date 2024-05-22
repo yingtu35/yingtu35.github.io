@@ -14,7 +14,7 @@ function Project({project}) {
     const modalBg = { light: "gray.600", dark: "gray.400"};
 
     return(
-        <Box className="project-box"
+        <Box className="project-card hidden project-box"
              as="button"
              aria-label={title}
              onClick={onOpen}

@@ -5,9 +5,9 @@ import { Box, Flex } from "@chakra-ui/react"
 import { SearchIcon } from "@chakra-ui/icons";
 import { debounce } from "utils/functions";
 import { projects, moreProjects } from "../../data/projects.js"
-import Project from "./Project.jsx";
 // import ProjectPagination from "./ProjectPagination.jsx";
 import { filterAndSortProjects } from "utils/projects.js";
+import Project from "./Project";
 
 const customStyles = {
   option: (provided, state) => ({
@@ -55,6 +55,7 @@ const AllProjects = () => {
   // console.log(allProjects)
 
   const projectsToDisplay = filterAndSortProjects(allProjects, searchTitle, selectedType.value, selectedSort.value);
+
   return (
     <Box id="all-projects">
       <Flex className="section-title-container" style={{margin: '5px 0'}}>

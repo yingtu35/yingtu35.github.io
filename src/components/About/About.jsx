@@ -53,7 +53,7 @@ function About() {
                     <Box className="skill-list content">
                         <List spacing={1}>
                             {aboutTechnicalSkills.map(skill => (
-                                <ListItem key={skill.skill}>
+                                <ListItem className="hidden" key={skill.skill}>
                                     <ListIcon as={skill.icon} color="#20a785" />
                                     {skill.skill}
                                 </ListItem>

@@ -8,7 +8,7 @@ const ExperienceMobile = ({ experience }) => {
   return (
     <>
       <Box className="experience-image-container">
-          <img src={experience.image} alt="experience" loading="lazy" />
+          <img className="company-photo" src={experience.image} alt="experience" loading="lazy" />
       </Box>
       <Box textAlign="justify" className="experience-info">
         <Box mb={2}>
@@ -44,7 +44,7 @@ const ExperiencePC = ({ experience }) => {
           </ul>
       </Box>
       <Box className="experience-image-container">
-          <img src={experience.image} alt="experience" loading="lazy" />
+          <img className="company-photo" src={experience.image} alt="experience" loading="lazy" />
       </Box>
     </>
   )
@@ -52,7 +52,7 @@ const ExperiencePC = ({ experience }) => {
 
 export default function Experience({ experience }) {
     return (
-        <Flex className="experience-container">
+        <Flex className="hidden experience-container">
             <Media query="(max-width: 767px)">
                 {matches => (
                     matches? (

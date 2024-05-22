@@ -11,7 +11,7 @@ import BackToTopBtn from './components/BackToTopBtn';
 import Experiences from './components/Experiences/Experiences';
 
 function App() {
-  return (
+    return (
     <div className='App container'>
       <Routes>
         <Route path={"/"} element={

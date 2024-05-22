@@ -16,6 +16,7 @@ function Contacts() {
             <Flex justify="center" m={5}>
                 <Image  src="/self-portrait/Self-portrait_l50c8v_c_scale,w_240.webp"
                         alt="contact-photo"
+                        className="hidden contact-photo"
                         loading="lazy"
                         borderRadius="full"
                         boxSize={['128px', '128px', '128px', '128px', '10vw']}
